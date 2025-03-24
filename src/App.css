@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
 }
@@ -26,6 +30,18 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.radix-slider-thumb {
+  --radix-slider-thumb-transform: translateX(-50%);
+}
+.radix-slider-thumb-transform{
+  transform: var(--radix-slider-thumb-transform); 
+  left: calc(0% + 0px);
+}
+.translate3d{
+  transform: translate3d(0px, 0px, 0px); 
+  content-visibility: visible;
 }
 
 @keyframes App-logo-spin {
