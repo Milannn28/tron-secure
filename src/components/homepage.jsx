@@ -15,7 +15,7 @@ const Homepage = () => {
             </h1>
             <p class="text-xl text-gray-600">
               Experience the future of secure and efficient USDT trading with
-              TronSecure. Say goodbye to high gas fees and hello to peace of
+              TronSecure. Say goodbye to high gas fees and hello to peace ofy
               mind.
             </p>
             <div class="space-y-6">
