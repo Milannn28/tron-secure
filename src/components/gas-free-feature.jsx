@@ -89,7 +89,7 @@ const gasFreeFeature = () => {
                         </div>
                     </div>
                     <div className="mb-16 ">
-                        <h3 className="text-2xl font-semibold text-purple-900 mb-8">Early Access Benefits</h3>
+                        <h3 className="text-2xl font-semibold text-purple-900 mb-8 font-oswald text-start uppercase ">Early Access Benefits</h3>
                         <div className="gap-4 md:gap-6 grid grid-cols-1 md:grid-cols-3">
                             <div className="flex items-center space-x-4 w-fit">
                                 <div className="flex-shrink-0 w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold">1</div>
@@ -116,7 +116,7 @@ const gasFreeFeature = () => {
                             <div className="p-6">
                                 <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-start ">
                                     <div>
-                                        <h4 className="text-lg font-semibold mb-1 uppercase">Your Waitlist Position</h4>
+                                        <h4 className="text-lg font-semibold mb-1 uppercase font-oswald">Your Waitlist Position</h4>
                                         <p className="text-sm text-purple-200">Earlier you join, better the benefits</p>
                                     </div>
                                     <div className="flex items-center">
