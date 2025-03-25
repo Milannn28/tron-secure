@@ -165,9 +165,9 @@ const trusted = () => {
                                 </CarouselItem>
 
                             </CarouselContent>
-                            <div>
-                            <CarouselPrevious className="relative"/>
-                            <CarouselNext  className="relative"/>
+                            <div className='grid justify-between grid-flow-col mt-6'>
+                            <CarouselPrevious className="relative translate-[initial] left-0 top-0"/>
+                            <CarouselNext  className="relative translate-[initial] right-0 top-0"/>
 
                             </div>
                     </div>
