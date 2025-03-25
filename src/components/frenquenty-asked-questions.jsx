@@ -12,7 +12,7 @@ const frenquentyAskedQuestions = () => {
   return (
     <div class="py-24 bg-gradient-to-b from-purple-50 to-white">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 uppercase">Frequently Asked Questions</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 uppercase font-oswald">Frequently Asked Questions</h2>
         <div class="max-w-3xl mx-auto">
           <div class="mb-4">
             <Accordion type="single" collapsible>
