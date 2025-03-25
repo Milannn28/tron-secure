@@ -1,0 +1,17 @@
+import React from 'react'
+
+import ConnectWallet from '../components/connect-your-wallet';
+import Header from '../components/header';
+
+const Dashboard = () => {
+  return (
+    <div>
+    <Header/>
+      <div className='h-screen '>
+        <ConnectWallet/>
+      </div>
+    </div>
+  )
+}
+
+export default Dashboard

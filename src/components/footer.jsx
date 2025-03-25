@@ -6,7 +6,7 @@ const footer = () => {
     <div class="container mx-auto px-4">
         <div class="py-12">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="space-y-4">
+                <div class="space-y-4 text-start">
                     <div class="flex items-center space-x-2">
                         <div class="w-8 h-8 bg-white border border-gray-200 rounded-lg flex items-center justify-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cuboid h-5 w-5 text-purple-600">
@@ -21,8 +21,8 @@ const footer = () => {
                         Making USDT trading secure<br/>and gas-free
                     </p>
                 </div>
-                <div class="space-y-4">
-                    <h3 class="text-sm font-semibold text-gray-900">Product</h3>
+                <div class="space-y-4 text-start">
+                    <h3 class="text-sm font-semibold text-gray-900 uppercase">Product</h3>
                     <ul class="space-y-3">
                         <li>
                             <a class="text-sm text-gray-600 hover:text-purple-600 transition-colors" href="#features">Features</a>

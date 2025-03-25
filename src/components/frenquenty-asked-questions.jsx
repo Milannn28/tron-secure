@@ -4,7 +4,7 @@ const frenquentyAskedQuestions = () => {
   return (
     <div class="py-24 bg-gradient-to-b from-purple-50 to-white">
     <div class="container mx-auto px-4">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Frequently Asked Questions</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 uppercase">Frequently Asked Questions</h2>
         <div class="max-w-3xl mx-auto">
             <div class="mb-4">
                 <button class="flex justify-between items-center w-full text-left p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow duration-200">

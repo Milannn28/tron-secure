@@ -1,12 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const homepage = () => {
+const Homepage = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div class="relative pt-20 overflow-hidden bg-gradient-to-br from-purple-50 via-white to-purple-50">
       <div class="container px-4 mx-auto">
         <div class="grid lg:grid-cols-2 gap-12 items-center py-12 md:py-24">
           <div class="space-y-8 text-left" >
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900">
+            <h1 class="uppercase text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900">
               Tired of High Gas Fees and Unsafe USDT Trading?
             </h1>
             <p class="text-xl text-gray-600">
@@ -33,7 +37,7 @@ const homepage = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="text-xl font-semibold text-gray-900">
+                  <h3 class="text-xl font-semibold text-gray-900 uppercase">
                     Gas Free Trading
                   </h3>
                   <p class="mt-1 text-gray-600">
@@ -60,7 +64,7 @@ const homepage = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="text-xl font-semibold text-gray-900">
+                  <h3 class="text-xl font-semibold text-gray-900 uppercase">
                     Advanced Security
                   </h3>
                   <p class="mt-1 text-gray-600">
@@ -72,7 +76,7 @@ const homepage = () => {
             </div>
             <div class="flex flex-col sm:flex-row gap-4 pt-4">
               <a href="/dashboard">
-                <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-primary/90 h-11 rounded-md px-8 group bg-purple-600 text-white shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30 transition-all">
+                <button onClick={() => navigate("/dashboard")} class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-primary/90 h-11 rounded-md px-8 group bg-purple-600 text-white shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30 transition-all">
                   Start Free Trial
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -541,7 +545,7 @@ const homepage = () => {
                 <div class="flex items-center justify-between text-xs">
                   <div>
                     <p class="text-muted-foreground">Gas-Free Transactions</p>
-                    <p class="font-semibold text-primary">5 / day</p>
+                    <p class="font-semibold text-primary text-start">5 / day</p>
                   </div>
                   <a href="/dashboard">
                     <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-9 rounded-md bg-purple-600 text-white text-xs py-1 px-2 hover:bg-purple-700">
@@ -1232,7 +1236,7 @@ const homepage = () => {
                 <div class="flex items-center justify-between text-xs">
                   <div>
                     <p class="text-muted-foreground">Limited Time Offer</p>
-                    <div class="flex items-center gap-1">
+                    <div class="flex items-center gap-1 text-start">
                       <span class="line-through text-muted-foreground">
                         $10/scan
                       </span>
@@ -1254,4 +1258,4 @@ const homepage = () => {
   );
 };
 
-export default homepage;
+export default Homepage;

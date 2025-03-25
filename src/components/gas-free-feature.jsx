@@ -6,7 +6,7 @@ const gasFreeFeature = () => {
     <div className="py-24 bg-gradient-to-br from-purple-900/10 to-white">
                       <div className="container mx-auto px-4">
                     <div className="text-center mb-16 ">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-purple-900 mb-4">Gas-Free Future Awaits</h2>
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-purple-900 mb-4 uppercase">Gas-Free Future Awaits</h2>
                         <p className="text-xl text-gray-600">Join the revolution in USDT trading</p>
                     </div>
                     <div className="mb-16 " >
@@ -19,7 +19,7 @@ const gasFreeFeature = () => {
                                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                                             </svg>
                                         </div>
-                                        <div>
+                                        <div className='text-start'>
                                             <p className="text-sm text-gray-600">Current Gas Price</p>
                                             <p className="text-xl font-semibold">$6.50</p>
                                         </div>
@@ -33,7 +33,7 @@ const gasFreeFeature = () => {
                                                 <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                                             </svg>
                                         </div>
-                                        <div>
+                                        <div className='text-start'>
                                             <p className="text-sm text-gray-600">Users in Waitlist</p>
                                             <p className="text-xl font-semibold">250</p>
                                         </div>
@@ -45,7 +45,7 @@ const gasFreeFeature = () => {
                                                 <polyline points="12 6 12 12 16 14"></polyline>
                                             </svg>
                                         </div>
-                                        <div>
+                                        <div className='text-start'>
                                             <p className="text-sm text-gray-600">Joined Last Hour</p>
                                             <p className="text-xl font-semibold">+147</p>
                                         </div>
@@ -111,9 +111,9 @@ const gasFreeFeature = () => {
                     <div>
                         <div className="rounded-lg border shadow-sm bg-purple-900 text-white">
                             <div className="p-6">
-                                <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                                <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-start ">
                                     <div>
-                                        <h4 className="text-lg font-semibold mb-1">Your Waitlist Position</h4>
+                                        <h4 className="text-lg font-semibold mb-1 uppercase">Your Waitlist Position</h4>
                                         <p className="text-sm text-purple-200">Earlier you join, better the benefits</p>
                                     </div>
                                     <div className="flex items-center">

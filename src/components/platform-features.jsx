@@ -8,7 +8,7 @@ const platformFeatures = () => {
     >
       <div class="container mx-auto px-4">
         <div class="text-center mb-8" >
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 uppercase">
             Platform Features
           </h2>
           <p class="text-gray-600 max-w-2xl mx-auto">
@@ -38,8 +38,8 @@ const platformFeatures = () => {
                 <path d="M12 17h.01"></path>
               </svg>
             </div>
-            <div>
-              <h3 class="text-lg font-semibold text-purple-600 mb-1">
+            <div class="text-start">
+              <h3 class="text-lg font-semibold text-purple-600 mb-1 uppercase">
                 Why Check Your Transaction History?
               </h3>
               <p class="text-purple-500">
@@ -110,11 +110,11 @@ const platformFeatures = () => {
                   <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                 </svg>
               </div>
-              <h3 class="text-xl font-semibold text-gray-900">
+              <h3 class="text-xl font-semibold text-gray-900 uppercase">
                 Verification Process
               </h3>
             </div>
-            <p class="text-gray-600 mb-6">
+            <p class="text-gray-600 mb-6 text-start">
               Advanced multi-step verification ensures your wallet's security
             </p>
             <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">
@@ -803,11 +803,11 @@ const platformFeatures = () => {
                   <path d="M8 17v-3"></path>
                 </svg>
               </div>
-              <h3 class="text-xl font-semibold text-gray-900">
+              <h3 class="text-xl font-semibold text-gray-900 uppercase">
                 Security Metrics
               </h3>
             </div>
-            <p class="text-gray-600 mb-6">
+            <p class="text-gray-600 mb-6 text-start">
               Real-time security scoring and risk assessment
             </p>
             <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">
@@ -2092,11 +2092,11 @@ const platformFeatures = () => {
                   <path d="M16 17H8"></path>
                 </svg>
               </div>
-              <h3 class="text-xl font-semibold text-gray-900">
+              <h3 class="text-xl font-semibold text-gray-900 uppercase">
                 PDF Report &amp; Certificate
               </h3>
             </div>
-            <p class="text-gray-600 mb-6">
+            <p class="text-gray-600 mb-6 text-start">
               Detailed security analysis report with recommendations
             </p>
             <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">
@@ -3086,11 +3086,11 @@ const platformFeatures = () => {
                   <circle cx="12" cy="8" r="6"></circle>
                 </svg>
               </div>
-              <h3 class="text-xl font-semibold text-gray-900">
+              <h3 class="text-xl font-semibold text-gray-900 uppercase">
                 Certificate Preview
               </h3>
             </div>
-            <p class="text-gray-600 mb-6">
+            <p class="text-gray-600 mb-6 text-start">
               Blockchain-verified security certificates
             </p>
             <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">

@@ -5,11 +5,11 @@ const walletSecurity = () => {
     <div className='py-24 bg-gradient-to-b from-purple-100 to-white'>
                       <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Premium Wallet Security Report</h2>
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 uppercase">Premium Wallet Security Report</h2>
                         <p className="text-xl text-purple-600 font-semibold" >
                             <span className="line-through">Valued at $10</span>
                             - Now Available for FREE
-                        </p>
+                        </p>    
                     </div>
                     <div className="mb-16" >
                         <div className="rounded-lg border bg-card text-card-foreground border-purple-200 shadow-lg">
@@ -20,7 +20,7 @@ const walletSecurity = () => {
                                         <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
                                         <path d="m9 15 2 2 4-4"></path>
                                     </svg>
-                                    <h3 className="text-lg font-semibold text-gray-900">Comprehensive Security Analysis Report</h3>
+                                    <h3 className="text-lg font-semibold text-gray-900 uppercase">Comprehensive Security Analysis Report</h3>
                                 </div>
                             </div>
                             <div className="p-6">
@@ -32,7 +32,7 @@ const walletSecurity = () => {
                                                 <path d="m21 21-4.3-4.3"></path>
                                             </svg>
                                         </div>
-                                        <div className="flex-1 space-y-2">
+                                        <div className="flex-1 space-y-2 text-start ">
                                             <p className="text-sm font-medium">CEX Blacklist Check</p>
                                             <div className="h-2 bg-secondary rounded-full overflow-hidden">
                                                 <div className="h-full bg-gradient-to-r from-purple-200 to-purple-600" ></div>
@@ -49,7 +49,7 @@ const walletSecurity = () => {
                                                 <path d="M12 17h.01"></path>
                                             </svg>
                                         </div>
-                                        <div className="flex-1 space-y-2">
+                                        <div className="flex-1 space-y-2 text-start">
                                             <p className="text-sm font-medium">Transaction Analysis</p>
                                             <div className="h-2 bg-secondary rounded-full overflow-hidden">
                                                 <div className="h-full bg-gradient-to-r from-purple-200 to-purple-600" ></div>
@@ -69,7 +69,7 @@ const walletSecurity = () => {
                                                 <path d="M12 12V8"></path>
                                             </svg>
                                         </div>
-                                        <div className="flex-1 space-y-2">
+                                        <div className="flex-1 space-y-2 text-start">
                                             <p className="text-sm font-medium">Trust Network</p>
                                             <div className="h-2 bg-secondary rounded-full overflow-hidden">
                                                 <div className="h-full bg-gradient-to-r from-purple-200 to-purple-600" ></div>
@@ -83,7 +83,7 @@ const walletSecurity = () => {
                         </div>
                     </div>
                     <div className="mb-16">
-                        <h3 className="text-2xl font-bold text-gray-900 mb-8" >What &#x27;s Included in Your Report</h3>
+                        <h3 className="text-2xl font-bold text-gray-900 mb-8 text-start uppercase" >What &#x27;s Included in Your Report</h3>
                         <div className="grid md:grid-cols-2 gap-8">
                             <div className="group">
                                 <div className="rounded-lg border bg-card text-card-foreground shadow-sm border-purple-100 transition-all duration-300 hover:border-purple-300 hover:shadow-lg">
@@ -95,7 +95,7 @@ const walletSecurity = () => {
                                                     <path d="m21 21-4.3-4.3"></path>
                                                 </svg>
                                             </div>
-                                            <div className="flex-1">
+                                            <div className="grid text-start ">
                                                 <h4 className="text-lg font-semibold text-gray-900 mb-4">CEX Blacklist Check</h4>
                                                 <ul className="space-y-3">
                                                     <li className="flex items-center space-x-2 text-gray-600">
@@ -136,7 +136,7 @@ const walletSecurity = () => {
                                                     <path d="M12 17h.01"></path>
                                                 </svg>
                                             </div>
-                                            <div className="flex-1">
+                                            <div className="grid text-start">
                                                 <h4 className="text-lg font-semibold text-gray-900 mb-4">Transaction Analysis</h4>
                                                 <ul className="space-y-3">
                                                     <li className="flex items-center space-x-2 text-gray-600">
@@ -179,7 +179,7 @@ const walletSecurity = () => {
                                                     <path d="M12 12V8"></path>
                                                 </svg>
                                             </div>
-                                            <div className="flex-1">
+                                            <div className="grid text-start">
                                                 <h4 className="text-lg font-semibold text-gray-900 mb-4">Trust Network</h4>
                                                 <ul className="space-y-3">
                                                     <li className="flex items-center space-x-2 text-gray-600">
@@ -219,7 +219,7 @@ const walletSecurity = () => {
                                                     <circle cx="12" cy="8" r="6"></circle>
                                                 </svg>
                                             </div>
-                                            <div className="flex-1">
+                                            <div className="grid text-start">
                                                 <h4 className="text-lg font-semibold text-gray-900 mb-4">Digital Certificate</h4>
                                                 <ul className="space-y-3">
                                                     <li className="flex items-center space-x-2 text-gray-600">
