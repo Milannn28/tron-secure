@@ -7,7 +7,7 @@ const gasFreeFeature = () => {
     <div className="py-24 bg-gradient-to-br from-purple-900/10 to-white">
                       <div className="container mx-auto px-4">
                     <div className="text-center mb-16 ">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-purple-900 mb-4 uppercase">Gas-Free Future Awaits</h2>
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-purple-900 mb-4 uppercase font-oswald">Gas-Free Future Awaits</h2>
                         <p className="text-xl text-gray-600">Join the revolution in USDT trading</p>
                     </div>
                     <div className="mb-16 " >
@@ -57,8 +57,8 @@ const gasFreeFeature = () => {
                     </div>
                     <div className="mb-16 ">
                         <div className="rounded-lg border bg-card text-card-foreground shadow-sm border-purple-200">
-                            <div className="p-6">
-                                <h3 className="text-xl font-semibold text-purple-900 mb-6">Your Potential Monthly Savings</h3>
+                            <div className="p-6 bg-white">
+                                <h3 className="text-xl font-semibold text-purple-900 mb-6 font-oswald text-start uppercase">Your Potential Monthly Savings</h3>
                                 <div className="mb-8">
                                     {/* <span dir="ltr" data-orientation="horizontal" aria-disabled="false" className="radix-slider-thumb  relative flex touch-none select-none items-center w-full" >
                                         <span data-orientation="horizontal" className="relative h-2 w-full grow overflow-hidden rounded-full bg-secondary">
