@@ -6,7 +6,7 @@ const walletSecurity = () => {
     <div className='py-24 bg-gradient-to-b from-purple-100 to-white'>
                       <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 uppercase">Premium Wallet Security Report</h2>
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 uppercase font-oswald">Premium Wallet Security Report</h2>
                         <p className="text-xl text-purple-600 font-semibold" >
                             <span className="line-through">Valued at $10</span>
                             - Now Available for FREE
@@ -21,7 +21,7 @@ const walletSecurity = () => {
                                         <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
                                         <path d="m9 15 2 2 4-4"></path>
                                     </svg>
-                                    <h3 className="text-lg font-semibold text-gray-900 uppercase">Comprehensive Security Analysis Report</h3>
+                                    <h3 className="text-lg font-semibold text-gray-900 uppercase font-oswald">Comprehensive Security Analysis Report</h3>
                                 </div>
                             </div>
                             <div className="p-6">
@@ -86,7 +86,7 @@ const walletSecurity = () => {
                         </div>
                     </div>
                     <div className="mb-16">
-                        <h3 className="text-2xl font-bold text-gray-900 mb-8 text-start uppercase" >What &#x27;s Included in Your Report</h3>
+                        <h3 className="text-2xl font-bold text-gray-900 mb-8 text-start uppercase font-oswald" >What &#x27;s Included in Your Report</h3>
                         <div className="grid md:grid-cols-2 gap-8">
                             <div className="group">
                                 <div className="rounded-lg border bg-card text-card-foreground shadow-sm border-purple-100 transition-all duration-300 hover:border-purple-300 hover:shadow-lg">
@@ -99,7 +99,7 @@ const walletSecurity = () => {
                                                 </svg>
                                             </div>
                                             <div className="grid text-start ">
-                                                <h4 className="text-lg font-semibold text-gray-900 mb-4">CEX Blacklist Check</h4>
+                                                <h4 className="text-lg font-semibold text-gray-900 mb-4 font-oswald">CEX Blacklist Check</h4>
                                                 <ul className="space-y-3">
                                                     <li className="flex items-center space-x-2 text-gray-600">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-circle-check-big h-4 w-4 text-green-500 flex-shrink-0">
@@ -140,7 +140,7 @@ const walletSecurity = () => {
                                                 </svg>
                                             </div>
                                             <div className="grid text-start">
-                                                <h4 className="text-lg font-semibold text-gray-900 mb-4">Transaction Analysis</h4>
+                                                <h4 className="text-lg font-semibold text-gray-900 mb-4 font-oswald">Transaction Analysis</h4>
                                                 <ul className="space-y-3">
                                                     <li className="flex items-center space-x-2 text-gray-600">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-circle-check-big h-4 w-4 text-green-500 flex-shrink-0">
@@ -183,7 +183,7 @@ const walletSecurity = () => {
                                                 </svg>
                                             </div>
                                             <div className="grid text-start">
-                                                <h4 className="text-lg font-semibold text-gray-900 mb-4">Trust Network</h4>
+                                                <h4 className="text-lg font-semibold text-gray-900 mb-4 font-oswald">Trust Network</h4>
                                                 <ul className="space-y-3">
                                                     <li className="flex items-center space-x-2 text-gray-600">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-circle-check-big h-4 w-4 text-green-500 flex-shrink-0">
@@ -223,7 +223,7 @@ const walletSecurity = () => {
                                                 </svg>
                                             </div>
                                             <div className="grid text-start">
-                                                <h4 className="text-lg font-semibold text-gray-900 mb-4">Digital Certificate</h4>
+                                                <h4 className="text-lg font-semibold text-gray-900 mb-4 font-oswald">Digital Certificate</h4>
                                                 <ul className="space-y-3">
                                                     <li className="flex items-center space-x-2 text-gray-600">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-circle-check-big h-4 w-4 text-green-500 flex-shrink-0">

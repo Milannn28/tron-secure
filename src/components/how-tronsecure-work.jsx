@@ -4,7 +4,7 @@ const howTronsecureWork = () => {
   return (
     <div className="py-24 bg-gradient-to-b from-white to-purple-50">
                       <div className="container px-4 mx-auto">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-gray-900 uppercase" >How TronSecure Works</h2>
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-gray-900 uppercase font-oswald" >How TronSecure Works</h2>
                     <div className="relative max-w-5xl mx-auto">
                         <div className="absolute top-1/2 left-0 w-full h-0.5 bg-purple-200 -translate-y-1/2">
                             <div className="absolute top-0 left-0 h-full bg-purple-600"></div>
@@ -18,7 +18,7 @@ const howTronsecureWork = () => {
                                     </svg>
                                 </div>
                                 <div className="bg-white p-6 rounded-xl shadow-lg cursor-pointer transition-all ring-2 ring-purple-500">
-                                    <h3 className="text-xl font-semibold mb-2 text-center text-gray-900 uppercase">Wallet Check</h3>
+                                    <h3 className="text-xl font-semibold mb-2 text-center text-gray-900 uppercase font-oswald">Wallet Check</h3>
                                     <p className="text-gray-600 text-center mb-4">Instant security scan of your wallet</p>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-down h-5 w-5 mx-auto text-purple-500 transition-transform rotate-180">
                                         <path d="m6 9 6 6 6-6"></path>
@@ -61,7 +61,7 @@ const howTronsecureWork = () => {
                                     </svg>
                                 </div>
                                 <div className="bg-white p-6 rounded-xl shadow-lg cursor-pointer transition-all">
-                                    <h3 className="text-xl font-semibold mb-2 text-center text-gray-900 uppercase">Join Waitlist</h3>
+                                    <h3 className="text-xl font-semibold mb-2 text-center text-gray-900 uppercase font-oswald">Join Waitlist</h3>
                                     <p className="text-gray-600 text-center mb-4">Secure priority access to TronSecure</p>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-down h-5 w-5 mx-auto text-purple-500 transition-transform">
                                         <path d="m6 9 6 6 6-6"></path>
@@ -100,7 +100,7 @@ const howTronsecureWork = () => {
                                     </svg>
                                 </div>
                                 <div className="bg-white p-6 rounded-xl shadow-lg cursor-pointer transition-all">
-                                    <h3 className="text-xl font-semibold mb-2 text-center text-gray-900 uppercase">Access Platform</h3>
+                                    <h3 className="text-xl font-semibold mb-2 text-center text-gray-900 uppercase font-oswald">Access Platform</h3>
                                     <p className="text-gray-600 text-center mb-4">Start trading USDT without gas fees</p>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-down h-5 w-5 mx-auto text-purple-500 transition-transform">
                                         <path d="m6 9 6 6 6-6"></path>

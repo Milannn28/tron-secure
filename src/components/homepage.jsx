@@ -10,7 +10,7 @@ const Homepage = () => {
       <div class="container px-4 mx-auto">
         <div class="grid lg:grid-cols-2 gap-12 items-center py-12 md:py-24">
           <div class="space-y-8 text-left" >
-            <h1 class="uppercase text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900">
+            <h1 class="uppercase text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 font-oswald">
               Tired of High Gas Fees and Unsafe USDT Trading?
             </h1>
             <p class="text-xl text-gray-600">
@@ -37,7 +37,7 @@ const Homepage = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="text-xl font-semibold text-gray-900 uppercase">
+                  <h3 class="text-xl font-semibold text-gray-900 uppercase font-oswald">
                     Gas Free Trading
                   </h3>
                   <p class="mt-1 text-gray-600">
@@ -64,7 +64,7 @@ const Homepage = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="text-xl font-semibold text-gray-900 uppercase">
+                  <h3 class="text-xl font-semibold text-gray-900 uppercase font-oswald">
                     Advanced Security
                   </h3>
                   <p class="mt-1 text-gray-600">
@@ -138,7 +138,7 @@ const Homepage = () => {
                       <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
                     </svg>
                   </div>
-                  <h3 class="font-semibold text-sm">Energy Delegation</h3>
+                  <h3 class="font-semibold text-sm font-oswald uppercase">Energy Delegation</h3>
                 </div>
                 <div class="aspect-video bg-gradient-to-br from-primary/5 to-primary/10 rounded-lg flex items-center justify-center mb-2 flex-1">
                   <div>
@@ -573,7 +573,7 @@ const Homepage = () => {
                       <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                     </svg>
                   </div>
-                  <h3 class="font-semibold text-sm">Wallet Verification</h3>
+                  <h3 class="font-semibold text-sm uppercase font-oswald">Wallet Verification</h3>
                 </div>
                 <div class="aspect-video bg-gradient-to-br from-primary/5 to-primary/10 rounded-lg flex items-center justify-center mb-2">
                   <div>
