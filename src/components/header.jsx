@@ -1,8 +1,27 @@
 import React from 'react'
+import { useState, useEffect } from "react";
 
-const header = () => {
+const Header = () => {
+
+    const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className='fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent'>
+    <div className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? "bg-white shadow-md" : "bg-transparent"
+      }`}>
                   <div className="container mx-auto px-4">
                 <div className="flex items-center justify-between h-20">
                     <a className="flex items-center space-x-2" href="/">
@@ -66,4 +85,4 @@ const header = () => {
   )
 }
 
-export default header
+export default Header

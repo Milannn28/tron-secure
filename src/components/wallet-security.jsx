@@ -24,7 +24,7 @@ const walletSecurity = () => {
                                     <h3 className="text-lg font-semibold text-gray-900 uppercase font-oswald">Comprehensive Security Analysis Report</h3>
                                 </div>
                             </div>
-                            <div className="p-6">
+                            <div className="p-6 bg-white">
                                 <div className="space-y-4">
                                     <div className="flex items-center gap-4" >
                                         <div className="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center">
@@ -34,7 +34,7 @@ const walletSecurity = () => {
                                             </svg>
                                         </div>
                                         <div className="flex-1 space-y-2 text-start ">
-                                            <p className="text-sm font-medium">CEX Blacklist Check</p>
+                                            <p className="text-sm font-medium ">CEX Blacklist Check</p>
                                             {/* <div className="h-2 bg-secondary rounded-full overflow-hidden">
                                                 <div className="h-full bg-gradient-to-r from-purple-200 to-purple-600" style={{"width": "95%"}}></div>
                                             </div> */}
@@ -89,8 +89,8 @@ const walletSecurity = () => {
                         <h3 className="text-2xl font-bold text-gray-900 mb-8 text-start uppercase font-oswald" >What &#x27;s Included in Your Report</h3>
                         <div className="grid md:grid-cols-2 gap-8">
                             <div className="group">
-                                <div className="rounded-lg border bg-card text-card-foreground shadow-sm border-purple-100 transition-all duration-300 hover:border-purple-300 hover:shadow-lg">
-                                    <div className="p-6">
+                                <div className="rounded-lg border bg-card text-card-foreground  shadow-sm border-purple-100 transition-all duration-300 hover:border-purple-300 hover:shadow-lg">
+                                    <div className="p-6 bg-white">
                                         <div className="flex items-start space-x-4">
                                             <div className="p-3 rounded-xl  text-purple-600 bg-purple-100 transition-colors duration-300 group-hover:bg-gray-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-search h-6 w-6">
@@ -99,7 +99,7 @@ const walletSecurity = () => {
                                                 </svg>
                                             </div>
                                             <div className="grid text-start ">
-                                                <h4 className="text-lg font-semibold text-gray-900 mb-4 font-oswald">CEX Blacklist Check</h4>
+                                                <h4 className="text-lg font-semibold text-gray-900 mb-4 font-oswald uppercase">CEX Blacklist Check</h4>
                                                 <ul className="space-y-3">
                                                     <li className="flex items-center space-x-2 text-gray-600">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-circle-check-big h-4 w-4 text-green-500 flex-shrink-0">
@@ -130,7 +130,7 @@ const walletSecurity = () => {
                             </div>
                             <div className="group" >
                                 <div className="rounded-lg border bg-card text-card-foreground shadow-sm border-purple-100 transition-all duration-300 hover:border-purple-300 hover:shadow-lg">
-                                    <div className="p-6">
+                                    <div className="p-6 bg-white">
                                         <div className="flex items-start space-x-4">
                                             <div className="p-3 rounded-xl  text-purple-600 bg-purple-100 transition-colors duration-300 group-hover:bg-gray-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-triangle-alert h-6 w-6">
@@ -140,7 +140,7 @@ const walletSecurity = () => {
                                                 </svg>
                                             </div>
                                             <div className="grid text-start">
-                                                <h4 className="text-lg font-semibold text-gray-900 mb-4 font-oswald">Transaction Analysis</h4>
+                                                <h4 className="text-lg font-semibold text-gray-900 mb-4 font-oswald uppercase">Transaction Analysis</h4>
                                                 <ul className="space-y-3">
                                                     <li className="flex items-center space-x-2 text-gray-600">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-circle-check-big h-4 w-4 text-green-500 flex-shrink-0">
@@ -171,7 +171,7 @@ const walletSecurity = () => {
                             </div>
                             <div className="group">
                                 <div className="rounded-lg border bg-card text-card-foreground shadow-sm border-purple-100 transition-all duration-300 hover:border-purple-300 hover:shadow-lg">
-                                    <div className="p-6">
+                                    <div className="p-6 bg-white">
                                         <div className="flex items-start space-x-4">
                                             <div className="p-3 rounded-xl  text-purple-600 bg-purple-100 transition-colors duration-300 group-hover:bg-gray-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-network h-6 w-6">
@@ -183,7 +183,7 @@ const walletSecurity = () => {
                                                 </svg>
                                             </div>
                                             <div className="grid text-start">
-                                                <h4 className="text-lg font-semibold text-gray-900 mb-4 font-oswald">Trust Network</h4>
+                                                <h4 className="text-lg font-semibold text-gray-900 mb-4 font-oswald uppercase">Trust Network</h4>
                                                 <ul className="space-y-3">
                                                     <li className="flex items-center space-x-2 text-gray-600">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-circle-check-big h-4 w-4 text-green-500 flex-shrink-0">
@@ -214,7 +214,7 @@ const walletSecurity = () => {
                             </div>
                             <div className="group">
                                 <div className="rounded-lg border bg-card text-card-foreground shadow-sm border-purple-100 transition-all duration-300 hover:border-purple-300 hover:shadow-lg">
-                                    <div className="p-6">
+                                    <div className="p-6 bg-white">
                                         <div className="flex items-start space-x-4">
                                             <div className="p-3 rounded-xl  text-purple-600 bg-purple-100 transition-colors duration-300 group-hover:bg-gray-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-award h-6 w-6">
@@ -223,7 +223,7 @@ const walletSecurity = () => {
                                                 </svg>
                                             </div>
                                             <div className="grid text-start">
-                                                <h4 className="text-lg font-semibold text-gray-900 mb-4 font-oswald">Digital Certificate</h4>
+                                                <h4 className="text-lg font-semibold text-gray-900 mb-4 font-oswald uppercase">Digital Certificate</h4>
                                                 <ul className="space-y-3">
                                                     <li className="flex items-center space-x-2 text-gray-600">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-circle-check-big h-4 w-4 text-green-500 flex-shrink-0">
