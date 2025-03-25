@@ -1,8 +1,16 @@
 import React, { useState } from "react";
-
+import certiIcon from "../icons/certificates.json"
+import Lottie from "react-lottie";
 const PlatformFeatures = () => {
   const [type, setType] = useState("wallet");
-
+  const CertificateIcon = {
+    loop: true, // Make sure the animation loops continuously
+    autoplay: true, // Play the animation on load
+    animationData: certiIcon, // Animation data for the first animation
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice", // Optional: Adjust rendering
+    },
+  };
   // Handle the click event to change the feature type
   const handleFeatureChange = (newType) => {
     setType(newType);
@@ -129,6 +137,7 @@ const PlatformFeatures = () => {
               <div class="relative w-full h-full flex items-center justify-center">
                 <div class="w-32 h-32 ">
                   <div>
+                  <Lottie options={CertificateIcon} height={128} width={128} />
                     </div>
                 </div>
               </div>
