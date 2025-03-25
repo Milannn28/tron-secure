@@ -3,7 +3,7 @@ import React from "react";
 const Connectwallet = () => {
   return (
     <div className="pt-14">
-        <div className="container md:max-w-3xl mx-auto px-4 md:px-10 bg-white-20 rounded-3xl py-12 backdrop-blur-sm max-w-[96%]">
+        <div className="container md:max-w-3xl mx-auto px-4 md:px-10 bg-[#ffffff33] rounded-3xl py-12 max-w-[96%]">
         <div className="mb-12">
             <div
             aria-valuemax="100"
@@ -42,7 +42,7 @@ const Connectwallet = () => {
                 <span className="text-sm font-medium">Connect</span>
             </div>
             <div className="flex flex-col items-center gap-2 text-muted-foreground">
-                <div className="w-10 h-10 rounded-full flex items-center justify-center bg-secondary">
+                <div className="w-10 h-10 rounded-full flex items-center justify-center bg-secondary bg-white">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -61,7 +61,7 @@ const Connectwallet = () => {
                 <span className="text-sm font-medium">Scan</span>
             </div>
             <div className="flex flex-col items-center gap-2 text-muted-foreground">
-                <div className="w-10 h-10 rounded-full flex items-center justify-center bg-secondary">
+                <div className="w-10 h-10 rounded-full flex items-center justify-center bg-secondary bg-white">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -82,7 +82,7 @@ const Connectwallet = () => {
                 <span className="text-sm font-medium">Results</span>
             </div>
             <div className="flex flex-col items-center gap-2 text-muted-foreground">
-                <div className="w-10 h-10 rounded-full flex items-center justify-center bg-secondary">
+                <div className="w-10 h-10 rounded-full flex items-center justify-center bg-secondary bg-white">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -117,7 +117,7 @@ const Connectwallet = () => {
                 <div className="rounded-lg border bg-white text-card-foreground shadow-sm p-6">
                 <div className="flex items-center justify-between">
                     <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-full bg-[#deddddb4] flex items-center justify-center">
                         <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -162,7 +162,7 @@ const Connectwallet = () => {
                 </div>
                 </div>
             </div>
-            <div className="rounded-lg border text-card-foreground shadow-sm p-6 bg-secondary/50">
+            <div className="rounded-lg border text-card-foreground shadow-sm p-6 bg-[#ffffff52]">
                 <div className="flex gap-4">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -178,7 +178,7 @@ const Connectwallet = () => {
                 >
                     <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                 </svg>
-                <div className="text-start bg-secondary-50">
+                <div className="text-start ">
                     <h3 className="font-semibold mb-1 uppercase font-oswald">
                     Your security is our priority.
                     </h3>
