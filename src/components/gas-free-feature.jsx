@@ -1,5 +1,6 @@
 
 import React from 'react'
+import { Slider } from '@radix-ui/themes'
 
 const gasFreeFeature = () => {
   return (
@@ -59,7 +60,7 @@ const gasFreeFeature = () => {
                             <div className="p-6">
                                 <h3 className="text-xl font-semibold text-purple-900 mb-6">Your Potential Monthly Savings</h3>
                                 <div className="mb-8">
-                                    <span dir="ltr" data-orientation="horizontal" aria-disabled="false" className="radix-slider-thumb  relative flex touch-none select-none items-center w-full" >
+                                    {/* <span dir="ltr" data-orientation="horizontal" aria-disabled="false" className="radix-slider-thumb  relative flex touch-none select-none items-center w-full" >
                                         <span data-orientation="horizontal" className="relative h-2 w-full grow overflow-hidden rounded-full bg-secondary">
                                             <span data-orientation="horizontal" className="absolute h-full bg-primary left-0 right-[55.55555555555556%]"></span>
                                         </span>
@@ -67,7 +68,9 @@ const gasFreeFeature = () => {
                                             <span role="slider" aria-valuemin="5" aria-valuemax="50" aria-orientation="horizontal" data-orientation="horizontal" tabindex="0" className="block h-5 w-5 rounded-full border-2 border-primary bg-background ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 "  data-radix-collection-item=""></span>
                                             <input className='hidden'/>
                                         </span>
-                                    </span>
+                                    </span> */}
+                                    <Slider defaultValue={[50]} size="2" variant="soft" color="var(--gray-a12)"  />
+
                                     <div className="flex justify-between mt-2 text-sm text-gray-600">
                                         <span>5 Txns/day</span>
                                         <span>50 Txns/day</span>
