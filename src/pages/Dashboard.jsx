@@ -7,7 +7,7 @@ const Dashboard = () => {
   return (
     <div>
     <Header/>
-      <div className='h-screen '>
+      <div className='h-screen content-center'>
         <ConnectWallet/>
       </div>
     </div>
