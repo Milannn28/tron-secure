@@ -83,7 +83,7 @@ const Homepage = () => {
             </div>
             <div class="flex flex-col sm:flex-row gap-4 pt-4">
               <a href="/dashboard">
-                <button onClick={() => navigate("/dashboard")} class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-primary/90 h-11 rounded-md px-8 group bg-purple-600 text-white shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30 transition-all">
+                <button onClick={() => navigate("/dashboard")} class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-primary/90 h-11 rounded-md px-8 group bg-purple-600  hover:bg-black text-white shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30 transition-all">
                   Start Free Trial
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +103,7 @@ const Homepage = () => {
                 </button>
               </a>
               <a href="/dashboard">
-                <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:bg-accent hover:text-accent-foreground h-11 rounded-md px-8 group border-purple-500 text-purple-600 shadow-sm hover:shadow-md transition-all">
+                <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:bg-accent hover:text-accent-foreground h-11 rounded-md px-8 group border-purple-500 text-purple-600 shadow-sm hover:shadow-md transition-all hover:text-black ">
                   Verify Wallet
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

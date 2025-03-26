@@ -31,3 +31,63 @@ code {
 .rt-SliderThumb::before {
   border-color: black;
 }
+
+.mobileIcon {
+  height: 35px;
+  cursor: pointer;
+  z-index: 20;
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* min-width: 44px; */
+}
+.mobileIcon div {
+  width: 24px;
+  height: 3px;
+  border-radius: 5px;
+  display: inline-block;
+  background:  black;
+  position: relative;
+  
+  transition: all .3s ease 0s;
+}
+.mobileIcon div:before {
+  position: absolute;
+  content: '';
+  width: 24px;
+  height: 3px;
+  border-radius: 5px;
+  background: black;
+  top: -8px;
+  left: 0;
+  transition: all .3s ease 0s;
+
+}
+.mobileIcon div:after {
+  position: absolute;
+  content: '';
+  width: 24px;
+  height: 3px;
+  border-radius: 5px;
+  background:  black;
+  bottom: -8px;
+  transition: all .3s ease 0s;
+  left: 0;
+}
+.menu-open .mobileIcon div:before {
+  transform: rotate(45deg);
+  top: -1px;
+  background:  black;
+  
+}
+.menu-open .mobileIcon div:after {
+  transform: rotate(-45deg);
+  top: -1px;
+  background: black;
+}
+.menu-open .mobileIcon div {
+  background: rgb(255 255 255 / 0%);
+}
+.menu-open {
+  overflow: hidden;
+}
