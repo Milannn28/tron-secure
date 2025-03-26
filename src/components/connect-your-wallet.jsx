@@ -195,8 +195,8 @@ const Connectwallet = () => {
         </div> */}
 
 {/* stpe 2 scan */}
-{/* 
-        <div className="text-start space-y-6 grid gap-6">
+
+        {/* <div className="text-start space-y-6 grid gap-6">
            
                 <div className="text-center">
                     <h2 className="text-2xl font-bold mb-2 uppercase font-oswald">Scan your wallet</h2>
@@ -289,7 +289,7 @@ const Connectwallet = () => {
 
 {/* stpe 4  */}
 
-            <div className="text-start grid gap-6">
+            {/* <div className="text-start grid gap-6">
                     
                     <div className="text-center">
                         <h2 className="text-2xl font-bold mb-2 uppercase font-oswald">Welcome to the waitlist!</h2>
@@ -302,9 +302,7 @@ const Connectwallet = () => {
                             <p className="grid ">Your Position <span className="text-purple-600 text-2xl font-semibold">#522500</span></p>
                             <p className="grid ">Estimated Wait Time <span className="text-purple-600 text-2xl font-semibold"> ~8-10 days</span></p>
                         </div>
-
-
-            </div>
+            </div> */}
 
         </div>
     </div>
