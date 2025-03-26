@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import certiIcon from "../icons/certificates.json"
+import securityIcon from "../icons/security_metrics.json"
+import pdfIcon from "../icons/pdf_analysis.json"
+import verificationIcon from "../icons/verification.json"
 import Lottie from "react-lottie";
 const PlatformFeatures = () => {
   const [type, setType] = useState("wallet");
@@ -7,6 +10,30 @@ const PlatformFeatures = () => {
     loop: true, // Make sure the animation loops continuously
     autoplay: true, // Play the animation on load
     animationData: certiIcon, // Animation data for the first animation
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice", // Optional: Adjust rendering
+    },
+  };
+  const SecurityIcon = {
+    loop: true, // Make sure the animation loops continuously
+    autoplay: true, // Play the animation on load
+    animationData: securityIcon, // Animation data for the first animation
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice", // Optional: Adjust rendering
+    },
+  };
+  const PdfIcon = {
+    loop: true, // Make sure the animation loops continuously
+    autoplay: true, // Play the animation on load
+    animationData: pdfIcon, // Animation data for the first animation
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice", // Optional: Adjust rendering
+    },
+  };
+  const VerificationIcon = {
+    loop: true, // Make sure the animation loops continuously
+    autoplay: true, // Play the animation on load
+    animationData: verificationIcon, // Animation data for the first animation
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice", // Optional: Adjust rendering
     },
@@ -137,7 +164,8 @@ const PlatformFeatures = () => {
               <div class="relative w-full h-full flex items-center justify-center">
                 <div class="w-32 h-32 ">
                   <div>
-                  <Lottie options={CertificateIcon} height={128} width={128} />
+                  <Lottie options={VerificationIcon} height={128} width={128} />
+                  
                     </div>
                 </div>
               </div>
@@ -178,6 +206,7 @@ const PlatformFeatures = () => {
               <div class="relative w-full h-full flex items-center justify-center">
                 <div class="w-32 h-32">
                   <div>
+                  <Lottie options={SecurityIcon} height={128} width={128} />
                     
                   </div>
                 </div>
@@ -220,6 +249,8 @@ const PlatformFeatures = () => {
               <div class="relative w-full h-full flex items-center justify-center">
                 <div class="w-32 h-32">
                   <div>
+                  <Lottie options={PdfIcon} height={128} width={128} />
+
                    </div>
                 </div>
               </div>
@@ -258,6 +289,7 @@ const PlatformFeatures = () => {
               <div class="relative w-full h-full flex items-center justify-center">
                 <div class="w-32 h-32">
                   <div>
+                  <Lottie options={CertificateIcon} height={128} width={128} />
                     </div>
                 </div>
               </div>
@@ -270,6 +302,7 @@ const PlatformFeatures = () => {
         <div
           class="grid md:grid-cols-2 gap-8" 
         >
+        
           <div
             class="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
             
