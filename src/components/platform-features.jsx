@@ -3,7 +3,11 @@ import certiIcon from "../icons/certificates.json"
 import securityIcon from "../icons/security_metrics.json"
 import pdfIcon from "../icons/pdf_analysis.json"
 import verificationIcon from "../icons/verification.json"
+import dailyCalenderIcon from "../icons/daliy_calender.json"
+import efficiencyIcon from "../icons/Efficiency_Score.json"
 import Lottie from "react-lottie";
+import { motion,AnimatePresence  } from 'framer-motion';
+
 const PlatformFeatures = () => {
   const [type, setType] = useState("wallet");
   const CertificateIcon = {
@@ -38,6 +42,22 @@ const PlatformFeatures = () => {
       preserveAspectRatio: "xMidYMid slice", // Optional: Adjust rendering
     },
   };
+  const DailyCalenderIcon = {
+    loop: true, // Make sure the animation loops continuously
+    autoplay: true, // Play the animation on load
+    animationData: dailyCalenderIcon, // Animation data for the first animation
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice", // Optional: Adjust rendering
+    },
+  };
+  const EfficiencyIcon = {
+    loop: true, // Make sure the animation loops continuously
+    autoplay: true, // Play the animation on load
+    animationData: efficiencyIcon, // Animation data for the first animation
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice", // Optional: Adjust rendering
+    },
+  };
   // Handle the click event to change the feature type
   const handleFeatureChange = (newType) => {
     setType(newType);
@@ -58,7 +78,7 @@ const PlatformFeatures = () => {
         </div>
         <div
           class="bg-purple-50 border border-purple-200 rounded-xl p-4 mb-8"
-          
+
         >
           <div class="flex items-start space-x-3">
             <div class="p-2 bg-purple-100 rounded-lg">
@@ -91,7 +111,7 @@ const PlatformFeatures = () => {
           </div>
         </div>
         <div class="flex space-x-4 mb-8">
-          <button onClick={() => handleFeatureChange("wallet")} class={`flex items-center space-x-2 px-6 py-3 rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 ${type === 'wallet'?'bg-purple-600 text-white shadow-lg':'bg-white text-gray-600 border border-purple-200 hover:border-purple-300'}`}>
+          <button onClick={() => handleFeatureChange("wallet")} class={`flex items-center space-x-2 px-6 py-3 rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 ${type === 'wallet' ? 'bg-purple-600 text-white shadow-lg' : 'bg-white text-gray-600 border border-purple-200 hover:border-purple-300'}`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -108,7 +128,7 @@ const PlatformFeatures = () => {
             </svg>
             <span>Wallet Security</span>
           </button>
-          <button  onClick={() => handleFeatureChange("energy")} class={`flex items-center space-x-2 px-6 py-3 rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 ${type !== 'wallet'?'bg-purple-600 text-white shadow-lg':'bg-white text-gray-600 border border-purple-200 hover:border-purple-300'}`}>
+          <button onClick={() => handleFeatureChange("energy")} class={`flex items-center space-x-2 px-6 py-3 rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 ${type !== 'wallet' ? 'bg-purple-600 text-white shadow-lg' : 'bg-white text-gray-600 border border-purple-200 hover:border-purple-300'}`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -126,329 +146,387 @@ const PlatformFeatures = () => {
             <span>Energy Delegation</span>
           </button>
         </div>
+
+        <AnimatePresence mode="wait">
         {
-          type==="wallet" ?
-          <div
-          class="grid md:grid-cols-2 gap-8"
-          
-        >
-          <div
-            class="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
-            
-          >
-            <div class="flex items-center space-x-4 mb-4">
-              <div class="p-3 rounded-lg bg-purple-100 text-purple-600">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-shield h-6 w-6"
-                >
-                  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-semibold text-gray-900 uppercase font-oswald">
-                Verification Process
-              </h3>
-            </div>
-            <p class="text-gray-600 mb-6 text-start">
-              Advanced multi-step verification ensures your wallet's security
-            </p>
-            <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">
-              <div class="relative w-full h-full flex items-center justify-center">
-                <div class="w-32 h-32 ">
-                  <div>
-                  <Lottie options={VerificationIcon} height={128} width={128} />
-                  
-                    </div>
+          type === "wallet" ?
+            <div
+              class="grid md:grid-cols-2 gap-8"
+
+            >
+             <motion.div
+                className="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
+                initial={{ opacity: 0, y: 25, x: 25 }}
+                animate={{ opacity: 1, y: 0, x: 0 }}
+                transition={{ duration: 0.5, delay: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+              >
+              {/* <div
+                class="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
+
+              > */}
+                <div class="flex items-center space-x-4 mb-4">
+                  <div class="p-3 rounded-lg bg-purple-100 text-purple-600">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-shield h-6 w-6"
+                    >
+                      <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-semibold text-gray-900 uppercase font-oswald">
+                    Verification Process
+                  </h3>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
-            
-          >
-            <div class="flex items-center space-x-4 mb-4">
-              <div class="p-3 rounded-lg bg-purple-100 text-purple-600">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-chart-column h-6 w-6"
-                >
-                  <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
-                  <path d="M18 17V9"></path>
-                  <path d="M13 17V5"></path>
-                  <path d="M8 17v-3"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-semibold text-gray-900 uppercase font-oswald">
-                Security Metrics
-              </h3>
-            </div>
-            <p class="text-gray-600 mb-6 text-start">
-              Real-time security scoring and risk assessment
-            </p>
-            <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">
-              <div class="relative w-full h-full flex items-center justify-center">
-                <div class="w-32 h-32">
-                  <div>
-                  <Lottie options={SecurityIcon} height={128} width={128} />
-                    
+                <p class="text-gray-600 mb-6 text-start">
+                  Advanced multi-step verification ensures your wallet's security
+                </p>
+                <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">
+                  <div class="relative w-full h-full flex items-center justify-center">
+                    <div class="w-32 h-32 ">
+                      <div>
+                        <Lottie options={VerificationIcon} height={128} width={128} />
+
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
-            
-          >
-            <div class="flex items-center space-x-4 mb-4">
-              <div class="p-3 rounded-lg bg-purple-100 text-purple-600">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-file-text h-6 w-6"
-                >
-                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
-                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
-                  <path d="M10 9H8"></path>
-                  <path d="M16 13H8"></path>
-                  <path d="M16 17H8"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-semibold text-gray-900 uppercase font-oswald">
-                PDF Report &amp; Certificate
-              </h3>
-            </div>
-            <p class="text-gray-600 mb-6 text-start">
-              Detailed security analysis report with recommendations
-            </p>
-            <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">
-              <div class="relative w-full h-full flex items-center justify-center">
-                <div class="w-32 h-32">
-                  <div>
-                  <Lottie options={PdfIcon} height={128} width={128} />
+              {/* </div> */}
+              </motion.div>
+              
+              <motion.div
+                className="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
+                initial={{ opacity: 0, y: 25, x: 25 }}
+                animate={{ opacity: 1, y: 0, x: 0 }}
+                transition={{ duration: 0.5, delay: 0 }}
+              >
+              {/* <div
+                class="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
 
-                   </div>
+              > */}
+                <div class="flex items-center space-x-4 mb-4">
+                  <div class="p-3 rounded-lg bg-purple-100 text-purple-600">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-chart-column h-6 w-6"
+                    >
+                      <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                      <path d="M18 17V9"></path>
+                      <path d="M13 17V5"></path>
+                      <path d="M8 17v-3"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-semibold text-gray-900 uppercase font-oswald">
+                    Security Metrics
+                  </h3>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
-            
-          >
-            <div class="flex items-center space-x-4 mb-4">
-              <div class="p-3 rounded-lg bg-purple-100 text-purple-600">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-award h-6 w-6"
-                >
-                  <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
-                  <circle cx="12" cy="8" r="6"></circle>
-                </svg>
-              </div>
-              <h3 class="text-xl font-semibold text-gray-900 uppercase font-oswald">
-                Certificate Preview
-              </h3>
-            </div>
-            <p class="text-gray-600 mb-6 text-start">
-              Blockchain-verified security certificates
-            </p>
-            <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">
-              <div class="relative w-full h-full flex items-center justify-center">
-                <div class="w-32 h-32">
-                  <div>
-                  <Lottie options={CertificateIcon} height={128} width={128} />
+                <p class="text-gray-600 mb-6 text-start">
+                  Real-time security scoring and risk assessment
+                </p>
+                <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">
+                  <div class="relative w-full h-full flex items-center justify-center">
+                    <div class="w-32 h-32">
+                      <div>
+                        <Lottie options={SecurityIcon} height={128} width={128} />
+
+                      </div>
                     </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        :
-
-
-        <div
-          class="grid md:grid-cols-2 gap-8" 
-        >
-        
-          <div
-            class="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
-            
-          >
-            <div class="flex items-center space-x-4 mb-4">
-              <div class="p-3 rounded-lg bg-purple-100 text-purple-600">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-shield h-6 w-6"
-                >
-                  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-semibold text-gray-900 uppercase font-oswald">
-                Energy Pool
-              </h3>
-            </div>
-            <p class="text-gray-600 mb-6 text-start">
-            Access shared energy pool for gas-free transactions
-            </p>
-            <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">
-              <div class="relative w-full h-full flex items-center justify-center">
-                <div class="w-32 h-32 ">
-                  <div>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
-            
-          >
-            <div class="flex items-center space-x-4 mb-4">
-              <div class="p-3 rounded-lg bg-purple-100 text-purple-600">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-chart-column h-6 w-6"
-                >
-                  <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
-                  <path d="M18 17V9"></path>
-                  <path d="M13 17V5"></path>
-                  <path d="M8 17v-3"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-semibold text-gray-900 uppercase font-oswald">
-                  Daily Allocation
-              </h3>
-            </div>
-            <p class="text-gray-600 mb-6 text-start">
-            Track and manage your daily energy usage
-            </p>
-            <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">
-              <div class="relative w-full h-full flex items-center justify-center">
-                <div class="w-32 h-32">
-                  <div>
-                    
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
+              {/* </div> */}
+              </motion.div>
 
-          <div
-            class="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
-            
-          >
-            <div class="flex items-center space-x-4 mb-4">
-              <div class="p-3 rounded-lg bg-purple-100 text-purple-600">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-file-text h-6 w-6"
-                >
-                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
-                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
-                  <path d="M10 9H8"></path>
-                  <path d="M16 13H8"></path>
-                  <path d="M16 17H8"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-semibold text-gray-900 uppercase font-oswald">
-              Usage Analytics
-              </h3>
-            </div>
-            <p class="text-gray-600 mb-6 text-start">
-            Detailed energy consumption analytics
-            </p>
-            <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">
-              <div class="relative w-full h-full flex items-center justify-center">
-                <div class="w-32 h-32">
-                  <div>
-                   </div>
+              <motion.div
+                className="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
+                initial={{ opacity: 0, y: 25, x: 25 }}
+                animate={{ opacity: 1, y: 0, x: 0 }}
+                transition={{ duration: 0.5, delay: 0 }}
+              >
+              {/* <div
+                class="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
+
+              > */}
+                <div class="flex items-center space-x-4 mb-4">
+                  <div class="p-3 rounded-lg bg-purple-100 text-purple-600">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-file-text h-6 w-6"
+                    >
+                      <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                      <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                      <path d="M10 9H8"></path>
+                      <path d="M16 13H8"></path>
+                      <path d="M16 17H8"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-semibold text-gray-900 uppercase font-oswald">
+                    PDF Report &amp; Certificate
+                  </h3>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
-            
-          >
-            <div class="flex items-center space-x-4 mb-4">
-              <div class="p-3 rounded-lg bg-purple-100 text-purple-600">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award h-6 w-6"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg>
-              </div>
-              <h3 class="text-xl font-semibold text-gray-900 uppercase font-oswald">
-              Efficiency Score
-              </h3>
-            </div>
-            <p class="text-gray-600 mb-6 text-start">Efficiency Score Monitor and optimize your energy efficiency
-            </p>
-            <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">
-              <div class="relative w-full h-full flex items-center justify-center">
-                <div class="w-32 h-32">
-                  <div>
+                <p class="text-gray-600 mb-6 text-start">
+                  Detailed security analysis report with recommendations
+                </p>
+                <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">
+                  <div class="relative w-full h-full flex items-center justify-center">
+                    <div class="w-32 h-32">
+                      <div>
+                        <Lottie options={PdfIcon} height={128} width={128} />
+
+                      </div>
                     </div>
+                  </div>
                 </div>
-              </div>
+              {/* </div> */}
+              </motion.div>
+
+              <motion.div
+                className="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
+                initial={{ opacity: 0, y: 25, x: 25 }}
+                animate={{ opacity: 1, y: 0, x: 0 }}
+                transition={{ duration: 0.5, delay: 0 }}
+              >
+              {/* <div
+                class="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
+
+              > */}
+                <div class="flex items-center space-x-4 mb-4">
+                  <div class="p-3 rounded-lg bg-purple-100 text-purple-600">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-award h-6 w-6"
+                    >
+                      <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+                      <circle cx="12" cy="8" r="6"></circle>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-semibold text-gray-900 uppercase font-oswald">
+                    Certificate Preview
+                  </h3>
+                </div>
+                <p class="text-gray-600 mb-6 text-start">
+                  Blockchain-verified security certificates
+                </p>
+                <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">
+                  <div class="relative w-full h-full flex items-center justify-center">
+                    <div class="w-32 h-32">
+                      <div>
+                        <Lottie options={CertificateIcon} height={128} width={128} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {/* </div> */}
+              </motion.div>
+
             </div>
-          </div>
-        </div>
+            :
+
+            <div
+              class="grid md:grid-cols-2 gap-8"
+            >
+              <motion.div
+                className="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
+                initial={{ opacity: 0.5, y: 25, x: 25 }}
+                animate={{ opacity: 1, y: 0, x: 0 }}
+                transition={{ duration: 0.5, delay: 0 }}
+              >
+                {/* <div
+            class="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
+            
+          > */}
+                <div class="flex items-center space-x-4 mb-4">
+                  <div class="p-3 rounded-lg bg-purple-100 text-purple-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-battery h-6 w-6"><rect width="16" height="10" x="2" y="7" rx="2" ry="2"></rect><line x1="22" x2="22" y1="11" y2="13"></line></svg>
+                  </div>
+                  <h3 class="text-xl font-semibold text-gray-900 uppercase font-oswald">
+                    Energy Pool
+                  </h3>
+                </div>
+                <p class="text-gray-600 mb-6 text-start">
+                  Access shared energy pool for gas-free transactions
+                </p>
+                <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">
+                  <div class="relative w-full h-full flex items-center justify-center">
+                    <div class="w-32 h-32 ">
+                      <div>
+                        <Lottie options={CertificateIcon} height={128} width={128} />
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* </div> */}
+              </motion.div>
+
+              <motion.div
+                className="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
+                initial={{ opacity: 0, y: 25, x: 25 }}
+                animate={{ opacity: 1, y: 0, x: 0 }}
+                transition={{ duration: 0.5, delay: 0 }}
+              >
+                {/* <div
+            class="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
+            
+          > */}
+                <div class="flex items-center space-x-4 mb-4">
+                  <div class="p-3 rounded-lg bg-purple-100 text-purple-600">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-chart-column h-6 w-6"
+                    >
+                      <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                      <path d="M18 17V9"></path>
+                      <path d="M13 17V5"></path>
+                      <path d="M8 17v-3"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-semibold text-gray-900 uppercase font-oswald">
+                    Daily Allocation
+                  </h3>
+                </div>
+                <p class="text-gray-600 mb-6 text-start">
+                  Track and manage your daily energy usage
+                </p>
+                <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">
+                  <div class="relative w-full h-full flex items-center justify-center">
+                    <div class="w-32 h-32">
+                      <div>
+                        <Lottie options={DailyCalenderIcon} height={128} width={128} />
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* </div> */}
+              </motion.div>
+
+              <motion.div
+                className="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
+                initial={{ opacity: 0, y: 25, x: 25 }}
+                animate={{ opacity: 1, y: 0, x: 0 }}
+                transition={{ duration: 0.5, delay: 0 }}
+              >
+                {/* <div
+            class="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
+            
+          > */}
+                <div class="flex items-center space-x-4 mb-4">
+                  <div class="p-3 rounded-lg bg-purple-100 text-purple-600">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-file-text h-6 w-6"
+                    >
+                      <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                      <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                      <path d="M10 9H8"></path>
+                      <path d="M16 13H8"></path>
+                      <path d="M16 17H8"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-semibold text-gray-900 uppercase font-oswald">
+                    Usage Analytics
+                  </h3>
+                </div>
+                <p class="text-gray-600 mb-6 text-start">
+                  Detailed energy consumption analytics
+                </p>
+                <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">
+                  <div class="relative w-full h-full flex items-center justify-center">
+                    <div class="w-32 h-32">
+                      <div>
+                        <Lottie options={PdfIcon} height={128} width={128} />
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* </div> */}
+              </motion.div>
+
+              <motion.div
+              className="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
+              initial={{ opacity: 0, y: 25, x:25 }}
+              animate={{ opacity: 1, y: 0, x:0 }}
+              transition={{ duration: 0.5, delay: 0 }}
+            >
+              {/* <div
+                class="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
+
+              > */}
+                <div class="flex items-center space-x-4 mb-4">
+                  <div class="p-3 rounded-lg bg-purple-100 text-purple-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award h-6 w-6"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg>
+                  </div>
+                  <h3 class="text-xl font-semibold text-gray-900 uppercase font-oswald">
+                    Efficiency Score
+                  </h3>
+                </div>
+                <p class="text-gray-600 mb-6 text-start">Efficiency Score Monitor and optimize your energy efficiency
+                </p>
+                <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">
+                  <div class="relative w-full h-full flex items-center justify-center">
+                    <div class="w-32 h-32">
+                      <div>
+                        <Lottie options={EfficiencyIcon} height={128} width={128} />
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {/* </div> */}
+              </motion.div>
+
+            </div>
         }
+        </AnimatePresence>
         <p class="text-center text-gray-500 text-sm mt-8 opacity-100">
           Hover on features for detailed information • Click tabs to switch
           between security and energy features
