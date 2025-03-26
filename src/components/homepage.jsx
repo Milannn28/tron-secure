@@ -10,7 +10,7 @@ const Homepage = () => {
     <div class="relative pt-20 overflow-hidden bg-gradient-to-br from-purple-50 via-white to-purple-50">
       <div class="container px-4 mx-auto">
         <div class="grid lg:grid-cols-2 gap-12 items-center py-12 md:py-24">
-          <motion.div class="space-y-8 text-left" initial={{ opacity: 0, translateY:100 }}
+          <motion.div class="space-y-8 text-left" initial={{ opacity: 0, translateY:20 }}
             animate={{ opacity: 1, translateY:0 }}
             transition={{
                 duration: 0.8,
