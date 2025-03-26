@@ -108,7 +108,7 @@ const Connectwallet = () => {
 
 {/* step 1 */}
 
-        {/* <div className="text-start space-y-6">
+        <div className="text-start space-y-6">
            
                 <div className="text-center">
                     <h2 className="text-2xl font-bold mb-2 uppercase font-oswald">Connect Your Wallet</h2>
@@ -192,7 +192,7 @@ const Connectwallet = () => {
                     </div>
                     </div>
                 </div>
-        </div> */}
+        </div>
 
 {/* stpe 2 scan */}
 
