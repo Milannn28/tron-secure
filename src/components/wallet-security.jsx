@@ -54,9 +54,11 @@ const walletSecurity = () => {
                                         </div>
                                         <div className="flex-1 space-y-2 text-start">
                                             <p className="text-sm font-medium">Transaction Analysis</p>
-                                            <div className="h-2 bg-secondary rounded-full overflow-hidden">
+                                            {/* <div className="h-2 bg-secondary rounded-full overflow-hidden">
                                                 <div className="h-full bg-gradient-to-r from-purple-200 to-purple-600" ></div>
-                                            </div>
+                                            </div> */}
+                                        <Progress className='h-full bg-gradient-to-r  '  size={"3"} value={87} />
+
                                         </div>
                                         <span className="text-sm font-medium text-primary w-16 text-right">87
 
@@ -74,9 +76,11 @@ const walletSecurity = () => {
                                         </div>
                                         <div className="flex-1 space-y-2 text-start">
                                             <p className="text-sm font-medium">Trust Network</p>
-                                            <div className="h-2 bg-secondary rounded-full overflow-hidden">
+                                            {/* <div className="h-2 bg-secondary rounded-full overflow-hidden">
                                                 <div className="h-full bg-gradient-to-r from-purple-200 to-purple-600" ></div>
-                                            </div>
+                                            </div> */}
+                                        <Progress className='h-full bg-gradient-to-r  '  size={"3"} value={100} />
+
                                         </div>
                                         <span className="text-sm font-medium text-primary w-16 text-right">100
                                         %</span>
