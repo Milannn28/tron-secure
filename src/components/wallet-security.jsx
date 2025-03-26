@@ -1,9 +1,14 @@
 import { Progress } from '@radix-ui/themes'
 import React from 'react'
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
-const walletSecurity = () => {
+
+export default function WalletSecurity() {
+    const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
+    
   return (
-    <div className='py-24 bg-gradient-to-b from-purple-100 to-white'>
+    <div ref={ref} className='py-24 bg-gradient-to-b from-purple-100 to-white'>
                       <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 uppercase font-oswald">Premium Wallet Security Report</h2>
@@ -35,10 +40,16 @@ const walletSecurity = () => {
                                         </div>
                                         <div className="flex-1 space-y-2 text-start ">
                                             <p className="text-sm font-medium ">CEX Blacklist Check</p>
-                                            {/* <div className="h-2 bg-secondary rounded-full overflow-hidden">
-                                                <div className="h-full bg-gradient-to-r from-purple-200 to-purple-600" style={{"width": "95%"}}></div>
-                                            </div> */}
-                                        <Progress className='h-full bg-gradient-to-r  '  size={"3"} value={75} />
+                                            <div className="slider-custom h-2 bg-secondary rounded-full overflow-hidden">
+                                                {/* <div className="h-full bg-gradient-to-r from-purple-200 to-purple-600" style={{"width": "95%"}}></div> */}
+                                                <motion.div
+                                                    className="h-full bg-gradient-to-r from-purple-200 to-purple-600"
+                                                    initial={{ width: 0 }}
+                                                    animate={inView ? { width: "95%" } : {}}
+                                                    transition={{ duration: 0.7 }}
+                                                ></motion.div>
+                                            </div>
+                                        {/* <Progress className='h-full bg-gradient-to-r'  size={"3"} value={75} /> */}
 
                                         </div>
                                         <span className="text-sm font-medium text-primary w-16 text-right">95
@@ -54,10 +65,16 @@ const walletSecurity = () => {
                                         </div>
                                         <div className="flex-1 space-y-2 text-start">
                                             <p className="text-sm font-medium">Transaction Analysis</p>
-                                            {/* <div className="h-2 bg-secondary rounded-full overflow-hidden">
-                                                <div className="h-full bg-gradient-to-r from-purple-200 to-purple-600" ></div>
-                                            </div> */}
-                                        <Progress className='h-full bg-gradient-to-r  '  size={"3"} value={87} />
+                                            <div className="slider-custom h-2 bg-secondary rounded-full overflow-hidden">
+                                                {/* <div className="h-full bg-gradient-to-r from-purple-200 to-purple-600" ></div> */}
+                                                <motion.div
+                                                    className="h-full bg-gradient-to-r from-purple-200 to-purple-600"
+                                                    initial={{ width: 0 }}
+                                                    animate={inView ? { width: "87%" } : {}}
+                                                    transition={{ duration: 0.6 }}
+                                                ></motion.div>
+                                            </div>
+                                        {/* <Progress className='h-full bg-gradient-to-r  '  size={"3"} value={87} /> */}
 
                                         </div>
                                         <span className="text-sm font-medium text-primary w-16 text-right">87
@@ -76,10 +93,16 @@ const walletSecurity = () => {
                                         </div>
                                         <div className="flex-1 space-y-2 text-start">
                                             <p className="text-sm font-medium">Trust Network</p>
-                                            {/* <div className="h-2 bg-secondary rounded-full overflow-hidden">
-                                                <div className="h-full bg-gradient-to-r from-purple-200 to-purple-600" ></div>
-                                            </div> */}
-                                        <Progress className='h-full bg-gradient-to-r  '  size={"3"} value={100} />
+                                            <div className="slider-custom h-2 bg-secondary rounded-full overflow-hidden">
+                                                {/* <div className="h-full bg-gradient-to-r from-purple-200 to-purple-600" ></div> */}
+                                                <motion.div
+                                                    className="h-full bg-gradient-to-r from-purple-200 to-purple-600"
+                                                    initial={{ width: 0 }}
+                                                    animate={inView ? { width: "100%" } : {}}
+                                                    transition={{ duration: 1 }}
+                                                ></motion.div>
+                                            </div>
+                                        {/* <Progress className='h-full bg-gradient-to-r  '  size={"3"} value={100} /> */}
 
                                         </div>
                                         <span className="text-sm font-medium text-primary w-16 text-right">100
@@ -281,5 +304,3 @@ const walletSecurity = () => {
     </div>
   )
 }
-
-export default walletSecurity
