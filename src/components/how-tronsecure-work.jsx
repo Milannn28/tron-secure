@@ -5,12 +5,10 @@ import { motion } from "framer-motion";
 export default function HowTronsecureWork () {
     const [sliderValue, setSliderValue] = useState(0);
 
-    const [isOpen, setIsOpen] = useState(true)
-    const [comp, setComp] = useState(1)
+    const [isOpen, setIsOpen] = useState(1)
 
     const handleIsOpen = (value) => {
-        setComp(value)
-        setIsOpen(!isOpen)
+        setIsOpen(value)
     }
 
   const handleHover = (value) => {
@@ -36,13 +34,13 @@ export default function HowTronsecureWork () {
                                     <path d="m9 11 3 3L22 4"></path>
                                 </svg>
                             </div>
-                            <div className="bg-white p-6 rounded-xl shadow-lg cursor-pointer transition-all ring-2 ring-purple-500" onClick={() => handleIsOpen(1)}>
+                            <div className= {`bg-white p-6 rounded-xl shadow-lg cursor-pointer transition-all  ${isOpen === 1 && "ring-2 ring-purple-500"}`} onClick={() => handleIsOpen(1)}>
                                 <h3 className="text-xl font-semibold mb-2 text-center text-gray-900 uppercase font-oswald">Wallet Check</h3>
                                 <p className="text-gray-600 text-center mb-4">Instant security scan of your wallet</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className={`lucide lucide-chevron-down h-5 w-5 mx-auto text-purple-500 transition-transform ${isOpen && comp == 1 ? "rotate-180" : "rotate-0"}`}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className={`lucide lucide-chevron-down h-5 w-5 mx-auto text-purple-500 transition-transform ${isOpen === 1 ? "rotate-180" : "rotate-0"}`}>
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg>
-                                <div className={`mt-4 pt-4 border-t border-gray-200 overflow-hidden transition-all duration-300 ${isOpen && comp == 1 ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`} >
+                                <div className={`mt-4 pt-4 border-t border-gray-200 overflow-hidden transition-all duration-300 ${isOpen === 1 ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`} >
                                     <ul className="space-y-2">
                                         <li className="grid grid-flow-col items-center gap-2 text-gray-600 place-content-start text-start" >
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-circle-check-big h-4 w-4 text-green-500">
@@ -79,13 +77,13 @@ export default function HowTronsecureWork () {
                                     <path d="M13 18h8"></path>
                                 </svg>
                             </div>
-                            <div className="bg-white p-6 rounded-xl shadow-lg cursor-pointer transition-all" onClick={() => handleIsOpen(2)}>
+                            <div className={`bg-white p-6 rounded-xl shadow-lg cursor-pointer transition-all ${isOpen === 2 && "ring-2 ring-purple-500"}`} onClick={() => handleIsOpen(2)}>
                                 <h3 className="text-xl font-semibold mb-2 text-center text-gray-900 uppercase font-oswald">Join Waitlist</h3>
                                 <p className="text-gray-600 text-center mb-4">Secure priority access to TronSecure</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className={`lucide lucide-chevron-down h-5 w-5 mx-auto text-purple-500 transition-transform ${isOpen && comp == 2 ? "rotate-180" : "rotate-0"}`}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className={`lucide lucide-chevron-down h-5 w-5 mx-auto text-purple-500 transition-transform ${isOpen === 2 ? "rotate-180" : "rotate-0"}`}>
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg>
-                                <div className={`mt-4 pt-4 border-t border-gray-200 overflow-hidden transition-all duration-300 ${isOpen && comp == 2 ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`} >
+                                <div className={`mt-4 pt-4 border-t border-gray-200 overflow-hidden transition-all duration-300 ${isOpen === 2 ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`} >
                                     <ul className="space-y-2">
                                         <li className="grid grid-flow-col items-center gap-2 text-gray-600 place-content-start text-start " >
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-circle-check-big h-4 w-4 text-green-500">
@@ -118,13 +116,13 @@ export default function HowTronsecureWork () {
                                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                                 </svg>
                             </div>
-                            <div className="bg-white p-6 rounded-xl shadow-lg cursor-pointer transition-all" onClick={() => handleIsOpen(3)}>
+                            <div className= {`bg-white p-6 rounded-xl shadow-lg cursor-pointer transition-all ${isOpen === 3 && "ring-2 ring-purple-500"}`} onClick={() => handleIsOpen(3)}>
                                 <h3 className="text-xl font-semibold mb-2 text-center text-gray-900 uppercase font-oswald">Access Platform</h3>
                                 <p className="text-gray-600 text-center mb-4">Start trading USDT without gas fees</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className={`lucide lucide-chevron-down h-5 w-5 mx-auto text-purple-500 transition-transform ${isOpen && comp == 3 ? "rotate-180" : "rotate-0" }`}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className={`lucide lucide-chevron-down h-5 w-5 mx-auto text-purple-500 transition-transform ${isOpen === 3 ? "rotate-180" : "rotate-0" }`}>
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg>
-                                <div className={`mt-4 pt-4 border-t border-gray-200 overflow-hidden transition-all duration-300 ${isOpen && comp == 3 ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
+                                <div className={`mt-4 pt-4 border-t border-gray-200 overflow-hidden transition-all duration-300 ${isOpen === 3 ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
                                     <ul className="space-y-2">
                                         <li className="grid grid-flow-col items-center gap-2 text-gray-600 place-content-start text-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-circle-check-big h-4 w-4 text-green-500">
