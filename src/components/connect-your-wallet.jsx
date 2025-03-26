@@ -195,7 +195,7 @@ const Connectwallet = () => {
         </div> */}
 
 {/* stpe 2 scan */}
-
+{/* 
         <div className="text-start space-y-6 grid gap-6">
            
                 <div className="text-center">
@@ -243,11 +243,11 @@ const Connectwallet = () => {
                 <button className="inline-flex items-center justify-center place-self-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50  text-primary-foreground hover:bg-black text-white h-10 px-4 py-2 bg-purple-500">
                         Start Scan
                 </button>
-        </div>
+        </div> */}
 
-{/* stpe 3 scan */}
+{/* stpe 3 */}
 
-            {/* <div className="text-start space-y-6 grid gap-6">
+            {/* <div className="text-start space-y-0 grid gap-6">
                     
                     <div className="text-center">
                         <h2 className="text-2xl font-bold mb-2 uppercase font-oswald">Scan Complete</h2>
@@ -255,97 +255,56 @@ const Connectwallet = () => {
                         Your wallet <br /> Wrfnirnfrnnecwew has been successfully analyzed
                         </p>
                     </div>
-                    <div className="space-y-4">
-                        <div className="rounded-lg border bg-white text-card-foreground shadow-sm p-4 flex gap-2 justify-center flex-col items-center">
-                            <div className="p-2 border-2 border-gray-400 w-fit rounded-full">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    className="lucide lucide-shield h-12 w-12"
-                                >
-                                    <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
-                                </svg>
+                    <div className="space-y-0">
+                        <div className="rounded-lg border bg-white text-card-foreground shadow-sm p-4 flex gap-4 justify-center flex-col items-center">
+                           
+                            <div className="p-2 h-24 w-24 border-4 border-purple-600  rounded-full grid justify-center items-center">
+                                <p className="font-bold text-3xl text-purple-600">90</p>
                             </div>
-                            <div
-                                aria-valuemax="100"
-                                aria-valuemin="0"
-                                role="progressbar"
-                                data-state="indeterminate"
-                                data-max="100"
-                                className="relative h-2 w-full overflow-hidden rounded-full bg-secondary"
-                                >
-                                <div
-                                    data-state="indeterminate"
-                                    data-max="100"
-                                    className="h-full w-full flex-1 bg-purple-500 transition-all"
-                                
-                                ></div>
+
+                            <div className="grid gap-2 w-full">
+                                <p className="w-full grid justify-between grid-flow-col">Transaction Analyzed:
+                                    <span className="font-semibold">Secure Wallet</span>
+                                </p>
+                                <p className="w-full grid justify-between grid-flow-col">Clean Transaction Rate:
+                                    <span className="font-semibold">Excelient</span>
+                                </p>
+                                <p className="w-full grid justify-between grid-flow-col">Risk Level:
+                                    <span className="font-semibold text-green-500">Medium</span>
+                                </p>
                             </div>
-                            <p>Wrfnirnfrnnecwew</p>
+
+                            <p>*The reports are sourced directly from the blockchain. If TRX was deducted for the test due to high demand, it will be refunded within 24 hours. Typically, we cover the gas fees for the test.</p>
                         </div>
                     </div>
-                    <button className="inline-flex items-center justify-center place-self-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50  text-primary-foreground hover:bg-black text-white h-10 px-4 py-2 bg-purple-500">
-                            Start Scan
-                    </button>
+                    <div className="grid grid-flow-row md:grid-flow-col gap-4">
+                        <button className="inline-flex items-center justify-center place-self-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50  text-primary-foreground hover:bg-black text-white h-10 px-4 py-2 bg-purple-500">
+                                Download Report
+                        </button>
+                        <button className="inline-flex items-center justify-center place-self-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50  text-primary-foreground hover:bg-black hover:text-white text-black h-10 px-4 py-2 bg-white">
+                                Download Certificate
+                        </button>
+                    </div>
             </div> */}
 
-{/* stpe 4 scan */}
+{/* stpe 4  */}
 
-            {/* <div className="text-start space-y-6 grid gap-6">
+            <div className="text-start grid gap-6">
                     
                     <div className="text-center">
-                        <h2 className="text-2xl font-bold mb-2 uppercase font-oswald">Welcome to the waitlist</h2>
+                        <h2 className="text-2xl font-bold mb-2 uppercase font-oswald">Welcome to the waitlist!</h2>
                         <p className="text-muted-foreground">
                         you are now in line for exclusive access to gas-free transactions.we'll notify you when it's your turn to experience the future of USDT trading
                         </p>
                     </div>
-                    <div className="space-y-4">
-                        <div className="rounded-lg border bg-white text-card-foreground shadow-sm p-4 flex gap-2 justify-center flex-col items-center">
-                            <div className="p-2 border-2 border-gray-400 w-fit rounded-full">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    className="lucide lucide-shield h-12 w-12"
-                                >
-                                    <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
-                                </svg>
-                            </div>
-                            <div
-                                aria-valuemax="100"
-                                aria-valuemin="0"
-                                role="progressbar"
-                                data-state="indeterminate"
-                                data-max="100"
-                                className="relative h-2 w-full overflow-hidden rounded-full bg-secondary"
-                                >
-                                <div
-                                    data-state="indeterminate"
-                                    data-max="100"
-                                    className="h-full w-full flex-1 bg-purple-500 transition-all"
-                                
-                                ></div>
-                            </div>
-                            <p>Wrfnirnfrnnecwew</p>
+
+                        <div className="text-center rounded-lg border bg-white text-card-foreground shadow-sm p-4 grid grid-flow-col gap-2 justify-between md:justify-around flex-col items-center">
+                            <p className="grid ">Your Position <span className="text-purple-600 text-2xl font-semibold">#522500</span></p>
+                            <p className="grid ">Estimated Wait Time <span className="text-purple-600 text-2xl font-semibold"> ~8-10 days</span></p>
                         </div>
-                    </div>
-                    <button className="inline-flex items-center justify-center place-self-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50  text-primary-foreground hover:bg-black text-white h-10 px-4 py-2 bg-purple-500">
-                            Start Scan
-                    </button>
-            </div> */}
+
+
+            </div>
 
         </div>
     </div>
