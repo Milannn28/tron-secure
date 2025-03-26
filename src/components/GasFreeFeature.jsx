@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 import { Slider } from '@radix-ui/themes'
 
 export default function GasFreeFeature(){
-	const [value, setValue] = useState([50]);
+	const [value, setValue] = useState([25]);
 
 	console.log('this',value);
 
@@ -83,7 +83,7 @@ export default function GasFreeFeature(){
                                             <input className='hidden'/>
                                         </span>
                                     </span> */}
-								<Slider defaultValue={[50]} min={5} max={50} step={1} onValueChange={(val) => setTxnsPerDay(val)} size="2" variant="soft" color="var(--gray-a12)" />
+								<Slider defaultValue={[value]} min={5} max={50} step={1} onValueChange={(val) => setTxnsPerDay(val)} size="2" variant="soft" color="var(--gray-a12)" />
 
 								<div className="flex justify-between mt-2 text-sm text-gray-600">
 									<span>5 Txns/day</span>

@@ -5,18 +5,18 @@ import { motion } from "framer-motion";
 export default function HowTronsecureWork () {
     const [sliderValue, setSliderValue] = useState(0);
 
-    const [isOpen, setIsOpen] = useState(false)
-    const [comp, setComp] = useState(0)
+    const [isOpen, setIsOpen] = useState(true)
+    const [comp, setComp] = useState(1)
 
     const handleIsOpen = (value) => {
-        setIsOpen(!isOpen)
         setComp(value)
+        setIsOpen(!isOpen)
     }
 
   const handleHover = (value) => {
     setSliderValue(value);
-    if (value == 1) setSliderValue(0)
-    else if(value == 2) setSliderValue(50)
+    if (value === 1) setSliderValue(0)
+    else if(value === 2) setSliderValue(50)
     else setSliderValue(100)
   };
 

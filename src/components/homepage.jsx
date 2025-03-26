@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { motion } from 'framer-motion';
 
 const Homepage = () => {
 
@@ -9,7 +10,13 @@ const Homepage = () => {
     <div class="relative pt-20 overflow-hidden bg-gradient-to-br from-purple-50 via-white to-purple-50">
       <div class="container px-4 mx-auto">
         <div class="grid lg:grid-cols-2 gap-12 items-center py-12 md:py-24">
-          <div class="space-y-8 text-left" >
+          <motion.div class="space-y-8 text-left" initial={{ opacity: 0, translateY:100 }}
+            animate={{ opacity: 1, translateY:0 }}
+            transition={{
+                duration: 0.8,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+            }}>
             <h1 class="uppercase text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 font-oswald">
               Tired of High Gas Fees and Unsafe USDT Trading?
             </h1>
@@ -116,12 +123,18 @@ const Homepage = () => {
                 </button>
               </a>
             </div>
-          </div>
+          </motion.div>
           <div class="relative" >
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-              <div
+              <motion.div
                 class="premium-card p-4 rounded-xl flex flex-col w-full"
-                
+                initial={{ opacity: 0, translateX:-50 }}
+            animate={{ opacity: 1, translateX:0 }}
+            transition={{
+                duration: 1,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+            }}
               >
                 <div class="flex items-center gap-2 mb-2">
                   <div class="p-1 rounded-lg bg-purple-100 text-purple-600">
@@ -553,10 +566,17 @@ const Homepage = () => {
                     </button>
                   </a>
                 </div>
-              </div>
-              <div
+              </motion.div>
+             
+              <motion.div
                 class="premium-card p-4 rounded-xl"
-                
+                initial={{ opacity: 0, translateX:50 }}
+            animate={{ opacity: 1, translateX:0 }}
+            transition={{
+                duration: 1,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+            }}
               >
                 <div class="flex items-center gap-2 mb-2">
                   <div class="p-1 rounded-lg bg-purple-100 text-purple-600">
@@ -1249,7 +1269,7 @@ const Homepage = () => {
                     </button>
                   </a>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>

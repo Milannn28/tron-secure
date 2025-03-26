@@ -90,7 +90,7 @@ const walletSecurity = () => {
                         <div className="grid md:grid-cols-2 gap-8">
                             <div className="group">
                                 <div className="rounded-lg border bg-card text-card-foreground  shadow-sm border-purple-100 transition-all duration-300 hover:border-purple-300 hover:shadow-lg">
-                                    <div className="p-6 bg-white">
+                                    <div className="p-6 bg-white  rounded-xl">
                                         <div className="flex items-start space-x-4">
                                             <div className="p-3 rounded-xl  text-purple-600 bg-purple-100 transition-colors duration-300 group-hover:bg-gray-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-search h-6 w-6">
@@ -130,7 +130,7 @@ const walletSecurity = () => {
                             </div>
                             <div className="group" >
                                 <div className="rounded-lg border bg-card text-card-foreground shadow-sm border-purple-100 transition-all duration-300 hover:border-purple-300 hover:shadow-lg">
-                                    <div className="p-6 bg-white">
+                                    <div className="p-6 bg-white rounded-xl">
                                         <div className="flex items-start space-x-4">
                                             <div className="p-3 rounded-xl  text-purple-600 bg-purple-100 transition-colors duration-300 group-hover:bg-gray-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-triangle-alert h-6 w-6">
@@ -171,7 +171,7 @@ const walletSecurity = () => {
                             </div>
                             <div className="group">
                                 <div className="rounded-lg border bg-card text-card-foreground shadow-sm border-purple-100 transition-all duration-300 hover:border-purple-300 hover:shadow-lg">
-                                    <div className="p-6 bg-white">
+                                    <div className="p-6 bg-white rounded-xl">
                                         <div className="flex items-start space-x-4">
                                             <div className="p-3 rounded-xl  text-purple-600 bg-purple-100 transition-colors duration-300 group-hover:bg-gray-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-network h-6 w-6">
@@ -214,7 +214,7 @@ const walletSecurity = () => {
                             </div>
                             <div className="group">
                                 <div className="rounded-lg border bg-card text-card-foreground shadow-sm border-purple-100 transition-all duration-300 hover:border-purple-300 hover:shadow-lg">
-                                    <div className="p-6 bg-white">
+                                    <div className="p-6 bg-white rounded-xl">
                                         <div className="flex items-start space-x-4">
                                             <div className="p-3 rounded-xl  text-purple-600 bg-purple-100 transition-colors duration-300 group-hover:bg-gray-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-award h-6 w-6">
