@@ -265,9 +265,10 @@ const PlatformFeatures = () => {
           </div>
         </div>
         :
+
+
         <div
-          class="grid md:grid-cols-2 gap-8"
-          
+          class="grid md:grid-cols-2 gap-8" 
         >
           <div
             class="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
@@ -291,11 +292,11 @@ const PlatformFeatures = () => {
                 </svg>
               </div>
               <h3 class="text-xl font-semibold text-gray-900 uppercase font-oswald">
-                Verification Process
+                Energy Pool
               </h3>
             </div>
             <p class="text-gray-600 mb-6 text-start">
-              Advanced multi-step verification ensures your wallet's security
+            Access shared energy pool for gas-free transactions
             </p>
             <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">
               <div class="relative w-full h-full flex items-center justify-center">
@@ -306,6 +307,7 @@ const PlatformFeatures = () => {
               </div>
             </div>
           </div>
+
           <div
             class="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
             
@@ -331,11 +333,11 @@ const PlatformFeatures = () => {
                 </svg>
               </div>
               <h3 class="text-xl font-semibold text-gray-900 uppercase font-oswald">
-                Security Metrics
+                  Daily Allocation
               </h3>
             </div>
             <p class="text-gray-600 mb-6 text-start">
-              Real-time security scoring and risk assessment
+            Track and manage your daily energy usage
             </p>
             <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">
               <div class="relative w-full h-full flex items-center justify-center">
@@ -347,6 +349,7 @@ const PlatformFeatures = () => {
               </div>
             </div>
           </div>
+
           <div
             class="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
             
@@ -373,11 +376,11 @@ const PlatformFeatures = () => {
                 </svg>
               </div>
               <h3 class="text-xl font-semibold text-gray-900 uppercase font-oswald">
-                PDF Report &amp; Certificate
+              Usage Analytics
               </h3>
             </div>
             <p class="text-gray-600 mb-6 text-start">
-              Detailed security analysis report with recommendations
+            Detailed energy consumption analytics
             </p>
             <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">
               <div class="relative w-full h-full flex items-center justify-center">
@@ -388,34 +391,19 @@ const PlatformFeatures = () => {
               </div>
             </div>
           </div>
-          {/* <div
+          <div
             class="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-all duration-300"
             
           >
             <div class="flex items-center space-x-4 mb-4">
               <div class="p-3 rounded-lg bg-purple-100 text-purple-600">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-award h-6 w-6"
-                >
-                  <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
-                  <circle cx="12" cy="8" r="6"></circle>
-                </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award h-6 w-6"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg>
               </div>
               <h3 class="text-xl font-semibold text-gray-900 uppercase font-oswald">
-                Certificate Preview
+              Efficiency Score
               </h3>
             </div>
-            <p class="text-gray-600 mb-6 text-start">
-              Blockchain-verified security certificates
+            <p class="text-gray-600 mb-6 text-start">Efficiency Score Monitor and optimize your energy efficiency
             </p>
             <div class="h-32 flex items-center justify-center bg-gray-50 rounded-lg">
               <div class="relative w-full h-full flex items-center justify-center">
@@ -425,7 +413,7 @@ const PlatformFeatures = () => {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
         }
         <p class="text-center text-gray-500 text-sm mt-8 opacity-100">
