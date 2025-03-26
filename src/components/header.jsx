@@ -152,7 +152,7 @@ const Header = () => {
 
          
           <nav
-            className={`absolute md:relative gap-2 top-20 md:top-0 left-0 w-full md:w-auto justify-between  bg-white md:bg-transparent shadow-md md:shadow-none p-4 md:p-0 flex flex-col md:flex-row md:space-x-8 transition-all duration-300 md:items-center items-start ${
+            className={`absolute md:relative gap-2 top-20 md:top-0 left-0 w-full justify-between md:max-w-[68%] md:justify-between bg-white md:bg-transparent shadow-md md:shadow-none p-4 md:p-0 flex flex-col md:flex-row md:space-x-8 transition-all duration-300 md:items-center items-start ${
               isMobileMenuOpen ? "flex" : "hidden md:flex"
             }`}
           >
