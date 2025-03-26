@@ -35,7 +35,7 @@ export default function FAQ () {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
 
   return (
-    <div className="py-24 bg-gradient-to-b from-purple-50 to-white" ref={ref}>
+    <div className="py-24 bg-gradient-to-b from-purple-50 to-white" ref={ref} id='frenquenty-asked-questions'>
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 uppercase font-oswald">
           Frequently Asked Questions

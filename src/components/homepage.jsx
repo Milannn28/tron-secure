@@ -113,7 +113,7 @@ const Homepage = () => {
                   </svg>
                 </button>
               </a>
-              <a href="/dashboard">
+              <a href="/wallet-verification">
                 <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:bg-accent hover:text-accent-foreground h-11 rounded-md px-8 group border-purple-500 text-purple-600 shadow-sm hover:shadow-md transition-all hover:text-black ">
                   Verify Wallet
                   <svg
@@ -625,7 +625,7 @@ const Homepage = () => {
                       <span class="font-semibold text-primary">FREE</span>
                     </div>
                   </div>
-                  <a href="/dashboard">
+                  <a href="/wallet-verification">
                     <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-9 rounded-md bg-purple-600 text-white text-xs py-1 px-2 hover:bg-purple-700">
                       Verify Now
                     </button>
