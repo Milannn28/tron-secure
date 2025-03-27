@@ -323,7 +323,7 @@ const Connectwallet = () => {
   const [activeStep, setActiveStep] = useState(1);
 
   return (
-    <div className="pt-14">
+    <div className="pt-28">
       <div className="container md:max-w-3xl mx-auto px-4 md:px-10 bg-[#ffffff33] rounded-3xl py-12 max-w-[96%]">
         <div className="mb-12">
           <div
@@ -332,7 +332,7 @@ const Connectwallet = () => {
             role="progressbar"
             data-state="indeterminate"
             data-max="100"
-            className="relative h-2 w-full overflow-hidden rounded-full bg-secondary mb-8"
+            className="bg-white relative h-2 w-full overflow-hidden rounded-full bg-secondary mb-8"
           >
             <div
               data-state="indeterminate"
@@ -619,12 +619,20 @@ const Connectwallet = () => {
               </div>
             </div>
             <div className="grid grid-flow-row md:grid-flow-col gap-4">
-              <button className="inline-flex items-center justify-center place-self-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50  text-primary-foreground hover:bg-black text-white h-10 px-4 py-2 bg-purple-500">
+              <button className="inline-flex items-center justify-center place-self-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50  text-primary-foreground hover:bg-black text-white h-10 px-4 py-2 bg-purple-500"
+              onClick={() => {
+                  setActiveStep(4);
+                  window.open("/certificate", "_blank");
+                }}
+              >
                 Download Report
               </button>
               <button 
                 className="inline-flex items-center justify-center place-self-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50  text-primary-foreground hover:bg-black hover:text-white text-black h-10 px-4 py-2 bg-white"
-                onClick={() => setActiveStep(4)}
+                onClick={() => {
+                  setActiveStep(4);
+                  window.open("/certificate", "_blank");
+                }}
               >
                 Download Certificate
               </button>

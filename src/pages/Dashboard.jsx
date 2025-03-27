@@ -5,9 +5,9 @@ import Header from '../components/header';
 
 const Dashboard = () => {
   return (
-    <div className='bg-gradient-to-r from-[#f7c6a3] via-[#f4a3b5] to-[#a3d8f7] bg-[length:400%_400%] animate-gradient'>
+    <div className='min-h-screen bg-gradient-to-r from-[#f7c6a3] via-[#f4a3b5] to-[#a3d8f7] bg-[length:400%_400%] animate-gradient'>
     <Header/>
-      <div className='h-screen content-center'>
+      <div className='content-center'>
         <ConnectWallet/>
       </div>
     </div>
