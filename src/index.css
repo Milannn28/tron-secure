@@ -96,3 +96,7 @@ code {
 .slider-custom {
   background-color: rgb(245, 245, 245)
 }
+
+.icon-background-image{
+ background-image : linear-gradient(to right bottom, rgba(23, 23, 23, 0.05), rgba(23, 23, 23, 0.1));
+}

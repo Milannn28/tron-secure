@@ -1,9 +1,12 @@
 
-import React, {useState} from 'react'
+import React, {useState,useEffect} from 'react'
 import { Slider } from '@radix-ui/themes'
 
 export default function GasFreeFeature(){
 	const [value, setValue] = useState([25]);
+	const [price, setPrice] = useState(generateRandomValue(6,9));	
+	const [waitlist, setWaitList] = useState(generateRandomValue1(200,500));	
+	const [joinedLastHour, setJoinedLastHour] = useState(generateRandomValue1(200,500));	
 
 	console.log('this',value);
 
@@ -11,11 +14,30 @@ export default function GasFreeFeature(){
 
   // Function to calculate savings dynamically
   const calculateSavings = (txns) => {
-    const minTxns = 5, maxTxns = 50;
-    const minSavings = 960, maxSavings = 9650; // Adjust if needed
+    // const minTxns = 5, maxTxns = 50;
+    // const minSavings = 960, maxSavings = 9650; // Adjust if needed
 
-    return minSavings + ((txns - minTxns) / (maxTxns - minTxns)) * (maxSavings - minSavings);
+    // return minSavings + ((txns - minTxns) / (maxTxns - minTxns)) * (maxSavings - minSavings);
+		return (price * txns * 30).toFixed(2)
+
   };
+
+	function generateRandomValue(min, max) {
+    return (Math.random() * (max - min) + min).toFixed(2);
+  }
+	function generateRandomValue1(min, max) {
+    return parseInt((Math.random() * (max - min) + min))
+  }
+
+	useEffect(() => {
+    const interval = setInterval(() => {
+      setPrice(generateRandomValue(6,9));
+      setJoinedLastHour(generateRandomValue1(200,500));
+      setWaitList(generateRandomValue1(200,500));
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
 		<div className="py-24 bg-gradient-to-br from-purple-900/10 to-white">
@@ -36,7 +58,7 @@ export default function GasFreeFeature(){
 									</div>
 									<div className='text-start'>
 										<p className="text-sm text-gray-600">Current Gas Price</p>
-										<p className="text-xl font-semibold">$6.50</p>
+										<p className="text-xl font-semibold">${price}</p>
 									</div>
 								</div>
 								<div className="flex items-center space-x-4">
@@ -50,7 +72,7 @@ export default function GasFreeFeature(){
 									</div>
 									<div className='text-start'>
 										<p className="text-sm text-gray-600">Users in Waitlist</p>
-										<p className="text-xl font-semibold">250</p>
+										<p className="text-xl font-semibold">{waitlist}</p>
 									</div>
 								</div>
 								<div className="flex items-center space-x-4">
@@ -62,7 +84,7 @@ export default function GasFreeFeature(){
 									</div>
 									<div className='text-start'>
 										<p className="text-sm text-gray-600">Joined Last Hour</p>
-										<p className="text-xl font-semibold">+147</p>
+										<p className="text-xl font-semibold">+{joinedLastHour}</p>
 									</div>
 								</div>
 							</div>
@@ -93,7 +115,7 @@ export default function GasFreeFeature(){
 							<div className="text-center">
 								<p className="text-3xl font-bold text-purple-600">$
 
-								{calculateSavings(txnsPerDay[0]).toFixed(2)}</p>
+								{calculateSavings(txnsPerDay[0])}</p>
 								<p className="text-gray-600">saved per month</p>
 								<p className="text-gray-600 text-xs">{txnsPerDay[0]} Txns/day</p>
 							</div>
@@ -134,7 +156,7 @@ export default function GasFreeFeature(){
 								<div className="flex items-center">
 									<span className="text-3xl font-bold mr-4">#
 
-										251</span>
+										{waitlist+1}</span>
 									<a href="/dashboard">
 										<button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 px-4 py-2 bg-purple-800 text-white hover:bg-purple-700">
 											Join Now

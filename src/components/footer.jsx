@@ -28,7 +28,7 @@ const footer = () => {
                             <a class="text-sm text-gray-600 hover:text-purple-600 transition-colors" href="#features">Features</a>
                         </li>
                         <li>
-                            <a class="text-sm text-gray-600 hover:text-purple-600 transition-colors" href="#how-it-works">How it Works</a>
+                            <a class="text-sm text-gray-600 hover:text-purple-600 transition-colors" href="/#how-it-works">How it Works</a>
                         </li>
                         <li>
                             <a class="text-sm text-gray-600 hover:text-purple-600 transition-colors" href="#security">Security</a>

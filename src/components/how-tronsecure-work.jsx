@@ -19,7 +19,7 @@ export default function HowTronsecureWork () {
   };
 
     return (
-        <div className="py-24 bg-gradient-to-b from-white to-purple-50" id='how-tronsecure-work'>
+        <div className="py-24 bg-gradient-to-b from-white to-purple-50" id='how-it-works'>
             <div className="container px-4 mx-auto">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-gray-900 uppercase font-oswald" >How TronSecure Works</h2>
                 <div className="relative max-w-5xl mx-auto">

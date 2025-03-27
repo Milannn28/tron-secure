@@ -27,7 +27,7 @@ const Homepage = () => {
   const navigate = useNavigate();
 
   return (
-    <div class="relative pt-20 overflow-hidden bg-gradient-to-br from-purple-50 via-white to-purple-50">
+    <div id="waitlist" class="relative pt-20 overflow-hidden bg-gradient-to-br from-purple-50 via-white to-purple-50">
       <div class="container px-4 mx-auto">
         <div class="grid lg:grid-cols-2 gap-12 items-center py-12 md:py-24">
           <motion.div class="space-y-8 text-left" initial={{ opacity: 0, translateY:20 }}
@@ -173,7 +173,7 @@ const Homepage = () => {
                   </div>
                   <h3 class="font-semibold text-sm font-oswald uppercase">Energy Delegation</h3>
                 </div>
-                <div class="aspect-video bg-gradient-to-br from-primary/5 to-primary/10 rounded-lg flex items-center justify-center mb-2 flex-1">
+                <div class="icon-background-image aspect-video rounded-lg flex items-center justify-center mb-2 flex-1">
                   <div>
                   <Lottie options={DollarIcon} height={250} width={320} />
                    
@@ -219,7 +219,7 @@ const Homepage = () => {
                   </div>
                   <h3 class="font-semibold text-sm uppercase font-oswald">Wallet Verification</h3>
                 </div>
-                <div class="aspect-video bg-gradient-to-br from-primary/5 to-primary/10 rounded-lg flex items-center justify-center mb-2">
+                <div class="icon-background-image aspect-video rounded-lg flex items-center justify-center mb-2">
                   <div>
                     
                   <Lottie options={VerificationSVG} height={250} width={320} />
